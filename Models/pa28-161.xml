@@ -154,7 +154,7 @@
  <animation>
   <type>rotate</type>
   <object-name>AntiServoTab</object-name>
-  <property>/controls/elevator-trim</property>
+  <property>/controls/flight/elevator-trim</property>
   <factor>-30</factor>
   <center>
    <x-m>6.79</x-m>
