@@ -8,7 +8,7 @@ MATERIAL "Interior" rgb 0.518797 0.62406 0.593985 amb 1 1 1 emis 0 0 0 spec 1 1 
 MATERIAL "Default" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 72 trans 0
 MATERIAL "Propeller" rgb 0 0 0 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 72 trans 0
 OBJECT world
-kids 40
+kids 39
 OBJECT poly
 name "AMM"
 numvert 4
@@ -32,22 +32,6 @@ numvert 4
 1.921779 -0.091797 0.213719
 1.921779 -0.091797 0.266534
 1.921779 -0.038982 0.266534
-numsurf 1
-SURF 0x00
-mat 0
-refs 4
-0 1.0 1.0
-3 0.0 1.0
-2 0.0 0.0
-1 1.0 0.0
-kids 0
-OBJECT poly
-name "CLOCK"
-numvert 4
-1.921779 0.257631 0.409443
-1.921779 0.204816 0.409443
-1.921779 0.204816 0.462258
-1.921779 0.257631 0.462258
 numsurf 1
 SURF 0x00
 mat 0

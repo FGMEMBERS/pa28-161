@@ -27,6 +27,15 @@
 -->
 
  <model>
+  <path>Aircraft/Instruments-3d/clock/clock.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.436</y-m>
+   <z-m>0.231</z-m>
+  </offsets>
+ </model>
+
+ <model>
   <path>Aircraft/Instruments-3d/asi/asi.xml</path>
   <offsets>
    <x-m>1.922</x-m>
