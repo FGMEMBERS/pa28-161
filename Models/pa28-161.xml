@@ -4,6 +4,7 @@
 
  <path>pa28-161.ac</path>
 
+<!--
  <panel>
   <name>PanelInstruments</name>
   <path>Aircraft/pa28-161/Models/panel-2d.xml</path>
@@ -23,6 +24,97 @@
    <z-m>0.31</z-m>
   </top-left>
  </panel>
+-->
+
+ <model>
+  <path>Aircraft/Instruments-3d/asi/asi.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.353</y-m>
+   <z-m>0.248</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/ai/ai.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.248</y-m>
+   <z-m>0.248</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/alt/alt.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.140</y-m>
+   <z-m>0.248</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/vor/vor.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.044</y-m>
+   <z-m>0.248</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/adf/adf.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.445</y-m>
+   <z-m>0.151</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/tc/tc.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.353</y-m>
+   <z-m>0.151</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/hi/hi.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.248</y-m>
+   <z-m>0.151</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/vsi/vsi.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.140</y-m>
+   <z-m>0.151</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/vor/vor.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.044</y-m>
+   <z-m>0.151</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/Instruments-3d/tach/tach.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.083</y-m>
+   <z-m>-0.051</z-m>
+  </offsets>
+ </model>
 
  <!-- Visible up to 10km (6mi) -->
  <animation>
