@@ -37,7 +37,7 @@ spinning.
 
   <systems>
     <electrical>
-      <path>Aircraft/c172/c172-electrical.xml</path>
+      <path>Aircraft/Generic/generic-electrical.xml</path>
     </electrical>
   </systems>
 
@@ -45,7 +45,7 @@ spinning.
   <!-- For now, use the Cessna 172 sound configuration (same engine) -->
 
   <sound>
-   <path archive="y">Aircraft/c172/c172-sound.xml</path>
+   <path archive="y">Aircraft/Generic/generic-sound.xml</path>
   </sound>
 
 
