@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>pa28-161.ac</path>
+
+<!--
+ <panel>
+  <name>PanelInstruments</name>
+  <path>Aircraft/c172p/Models/c172p-2d-panel.xml</path>
+  <bottom-left>
+   <x-m>-0.35</x-m>
+   <y-m>-0.50</y-m>
+   <z-m>-0.10</z-m>
+  </bottom-left>
+  <bottom-right>
+   <x-m>-0.35</x-m>
+   <y-m> 0.50</y-m>
+   <z-m>-0.10</z-m>
+  </bottom-right>
+  <top-left>
+   <x-m>-0.35</x-m>
+   <y-m>-0.50</y-m>
+   <z-m> 0.25</z-m>
+  </top-left>
+ </panel>
+-->
+
+ <!-- Visible up to 10km (6mi) -->
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>10000</max-m>
+ </animation>
+
+ <animation>
+  <type>spin</type>
+  <object-name>Propeller</object-name>
+  <property>/engines/engine[0]/rpm</property>
+  <factor>-1</factor>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftAileron</object-name>
+  <property>/surface-positions/left-aileron-pos-norm</property>
+  <factor>20</factor>
+  <center>
+   <x-m>3.13</x-m>
+   <y-m>-5.05</y-m>
+   <z-m>0.05</z-m>
+  </center>
+  <axis>
+   <x>0.05</x>
+   <y>1.0</y>
+   <z>-0.1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightAileron</object-name>
+  <property>/surface-positions/right-aileron-pos-norm</property>
+  <factor>20</factor>
+  <center>
+   <x-m>3.13</x-m>
+   <y-m>5.05</y-m>
+   <z-m>0.05</z-m>
+  </center>
+  <axis>
+   <x>-0.05</x>
+   <y>1.0</y>
+   <z>0.1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftFlap</object-name>
+  <property>/surface-positions/flap-pos-norm</property>
+  <factor>-45</factor>
+  <center>
+   <x-m>3.30</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.42</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightFlap</object-name>
+  <property>/surface-positions/flap-pos-norm</property>
+  <factor>45</factor>
+  <center>
+   <x-m>3.30</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.42</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.1</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Stabilator</object-name>
+  <object-name>AntiServoTab</object-name>
+  <property>/surface-positions/elevator-pos-norm</property>
+  <factor>15</factor>
+  <center>
+   <x-m>6.5</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.15</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>AntiServoTab</object-name>
+  <property>/surface-positions/elevator-pos-norm</property>
+  <factor>30</factor>
+  <center>
+   <x-m>6.79</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.17</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>AntiServoTab</object-name>
+  <property>/controls/elevator-trim</property>
+  <factor>-30</factor>
+  <center>
+   <x-m>6.79</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.17</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>NoseWheel</object-name>
+  <object-name>NoseWheelFairing</object-name>
+  <object-name>NoseWheelStrut</object-name>
+  <property>/surface-positions/rudder-pos-norm</property>
+  <factor>-17.5</factor>
+  <center>
+   <x-m>1.04</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.47</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Rudder</object-name>
+  <property>/surface-positions/rudder-pos-norm</property>
+  <factor>17.5</factor>
+  <center>
+   <x-m>6.36</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-.16</z-m>
+  </center>
+  <axis>
+   <x>0.25</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
