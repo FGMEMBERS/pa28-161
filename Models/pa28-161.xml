@@ -4,27 +4,14 @@
 
  <path>pa28-161.ac</path>
 
-<!--
- <panel>
-  <name>PanelInstruments</name>
-  <path>Aircraft/pa28-161/Models/panel-2d.xml</path>
-  <bottom-left>
-   <x-m>1.93</x-m>
-   <y-m>-0.57</y-m>
-   <z-m>-0.15</z-m>
-  </bottom-left>
-  <bottom-right>
-   <x-m>1.93</x-m>
-   <y-m> 0.57</y-m>
-   <z-m>-0.15</z-m>
-  </bottom-right>
-  <top-left>
-   <x-m>1.93</x-m>
-   <y-m>-0.57</y-m>
-   <z-m>0.31</z-m>
-  </top-left>
- </panel>
--->
+ <model>
+  <path>Aircraft/Instruments-3d/comp/comp.xml</path>
+  <offsets>
+   <x-m>1.930</x-m>
+   <y-m>0.000</y-m>
+   <z-m>0.432</z-m>
+  </offsets>
+ </model>
 
  <model>
   <path>Aircraft/Instruments-3d/clock/clock.xml</path>
