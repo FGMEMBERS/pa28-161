@@ -1,7 +1,177 @@
 <?xml version="1.0"?>
+<!--
+************************************************************************
+Aircraft configuration file: Piper Cherokee Warrior II (1979 model)
 
-<PropertyList include="pa28-161-yasim-set.xml">
+This file configures the airplane with full fuel, a 200 lb pilot, and
+a 150 lb copilot.  The plane starts with the mags on and the engine
+spinning.
+************************************************************************
+-->
+
+<PropertyList>
+
  <sim>
-  <description>Alias for pa28-161-yasim.</description>
+
+  <description>Piper Cherokee Warrior II (1979 model)</description>
+
+
+  <!-- Use the YASim physics engine for the flight model -->
+
+  <flight-model archive="y">yasim</flight-model>
+  <aero archive="y">pa28-161</aero>
+
+
+  <!-- Use a 3D model with its own 3D cockpit (no 2D panel) -->
+
+  <model>
+   <path archive="y">Aircraft/pa28-161/Models/pa28-161.xml</path>
+  </model>
+  <panel>
+   <visibility archive="y">false</visibility>
+  </panel>
+
+
+  <!-- For now, use the Cessna 172 electrical system -->
+
+  <systems>
+    <electrical>
+      <path>Aircraft/c172/c172-electrical.xml</path>
+    </electrical>
+  </systems>
+
+
+  <!-- For now, use the Cessna 172 sound configuration (same engine) -->
+
+  <sound>
+   <audible archive="y">true</audible>
+   <path archive="y">Aircraft/c172/c172-sound.xml</path>
+  </sound>
+
+
+  <!-- Set the pilot's view position -->
+
+  <view>
+   <internal archive="y">true</internal>
+   <config>
+     <x-offset-m archive="y">-0.18</x-offset-m>
+     <y-offset-m archive="y">0.5</y-offset-m>
+     <z-offset-m archive="y">2.6</z-offset-m>
+     <pitch-offset-deg>-15</pitch-offset-deg>
+   </config>
+  </view>
+
  </sim>
+
+
+ <!-- Add keyboard bindings for the rudder trim -->
+
+ <input>
+  <keyboard>
+    <key n="60">
+     <name>&lt;</name>
+     <desc>Rudder Trim Left</desc>
+     <binding>
+      <command>property-adjust</command>
+      <property>/controls/flight/rudder-trim</property>
+      <min type="double">-1.0</min>
+      <step type="double">-0.001</step>
+     </binding>
+    </key>
+    <key n="62">
+     <name>&gt;</name>
+     <desc>Rudder Trim Right</desc>
+     <binding>
+      <command>property-adjust</command>
+      <property>/controls/flight/rudder-trim</property>
+      <max type="double">1.0</max>
+      <step type="double">0.001</step>
+     </binding>
+    </key>
+  </keyboard>
+ </input>
+
+
+ <!-- Allow the attitude indicator to tumble -->
+
+ <instrumentation>
+  <attitude-indicator>
+   <config>
+    <tumble-flag>true</tumble-flag>
+   </config>
+  </attitude-indicator>
+ </instrumentation>
+
+
+ <!-- Start with the magnetos on -->
+
+ <controls>
+  <engines>
+   <engine n="0">
+    <magnetos>3</magnetos>
+   </engine>
+  </engines>
+ </controls>
+
+
+ <!-- Start with the engine spinning -->
+
+ <engines>
+  <engine>
+   <rpm type="double">700</rpm>
+  </engine>
+ </engines>
+
+
+ <!-- If there were an autopilot, it would use these numbers ... -->  
+
+ <autopilot>
+   <config>
+     <min-climb-speed-kt type="float">63.0</min-climb-speed-kt>
+     <best-climb-speed-kt type="float">79.0</best-climb-speed-kt>
+     <target-climb-rate-fpm type="float">600.0</target-climb-rate-fpm>
+     <target-descent-rate-fpm type="float">1000.0</target-descent-rate-fpm>
+     <elevator-adj-factor type="float">4000.0</elevator-adj-factor>
+     <integral-contribution type="float">0.01</integral-contribution>
+     <zero-pitch-throttle type="float">0.45</zero-pitch-throttle>
+     <zero-pitch-trim-full-throttle type="float">0.14</zero-pitch-trim-full-throttle>
+   </config>
+ </autopilot>
+
+
+ <!-- Start with both tanks completely full -->
+ <consumables>
+  <fuel>
+   <tank n="0">
+    <level-gal_us>24</level-gal_us>
+   </tank>
+   <tank n="1">
+    <level-gal_us>24</level-gal_us>
+   </tank>
+  </fuel>
+ </consumables>
+
+
+ <!-- Add a bit of fixed aileron trim to help fly level -->
+
+ <controls>
+  <flight>
+   <aileron-trim>0.01</aileron-trim>
+   <elevator-trim>0</elevator-trim>
+   <rudder-trim>0</rudder-trim>
+  </flight>
+ </controls>
+
+
+ <!-- Beefy pilot, slim copilot -->
+
+ <yasim>
+  <pa28>
+   <pilot-lb>200</pilot-lb>
+   <copilot-lb>150</copilot-lb>
+  </pa28>
+ </yasim>
+
 </PropertyList>
+
+<!-- end of pa28-161-set.xml -->
