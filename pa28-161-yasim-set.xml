@@ -27,6 +27,12 @@ YASim Piper Warrior II with 2D panel.
    </config>
   </view>
 
+  <view n="1">
+   <config>
+    <target-z-offset-m archive="y" type="double">2</target-z-offset-m>
+   </config>
+  </view>
+
  </sim>
 
 </PropertyList>
