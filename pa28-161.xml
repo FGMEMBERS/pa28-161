@@ -97,10 +97,11 @@
 
 <ballast x="-2.0" y="0" z="0" mass="400"/> <!-- cockpit -->
 
-<weight x="-2.05" y=".33" z="0" mass-prop="/yasim/pa28/pilot-lb"/>
-<weight x="-2.05" y="-.33" z="0" mass-prop="/yasim/pa28/copilot-lb"/>
-<weight x="-3.00" y="-.33" z="0" mass-prop="/yasim/pa28/left-pax-lb"/>
-<weight x="-3.00" y="-.33" z="0" mass-prop="/yasim/pa28/right-pax-lb"/>
-<weight x="-3.63" y="-.33" z="0" mass-prop="/yasim/pa28/baggage-lb"/>
+<!-- Pilot, copilot, left passenger, right passenger, baggage -->
+<weight x="-2.05" y=".33" z="0" mass-prop="/sim/weight[0]/weight-lb"/>
+<weight x="-2.05" y="-.33" z="0" mass-prop="/sim/weight[1]/weight-lb"/>
+<weight x="-3.00" y="-.33" z="0" mass-prop="/sim/weight[2]/weight-lb"/>
+<weight x="-3.00" y="-.33" z="0" mass-prop="/sim/weight[3]/weight-lb"/>
+<weight x="-3.63" y="0" z="0" mass-prop="/sim/weight[4]/weight-lb"/>
 
 </airplane>

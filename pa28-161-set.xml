@@ -90,6 +90,32 @@ spinning.
    </config>
   </view>
 
+  <weight n="0">
+    <name>Pilot</name>
+    <weight-lb>200</weight-lb>
+    <max-lb>300</max-lb>
+  </weight>
+  <weight n="1">
+    <name>Copilot</name>
+    <weight-lb>150</weight-lb>
+    <max-lb>300</max-lb>
+  </weight>
+  <weight n="2">
+    <name>Left Passenger</name>
+    <weight-lb>0</weight-lb>
+    <max-lb>300</max-lb>
+  </weight>
+  <weight n="3">
+    <name>Right Passenger</name>
+    <weight-lb>0</weight-lb>
+    <max-lb>300</max-lb>
+  </weight>
+  <weight n="4">
+    <name>Baggage</name>
+    <weight-lb>0</weight-lb>
+    <max-lb>200</max-lb>
+  </weight>
+
  </sim>
 
 
@@ -178,23 +204,15 @@ spinning.
  <consumables>
   <fuel>
    <tank n="0">
+    <name>Left</name>
     <level-gal_us>24</level-gal_us>
    </tank>
    <tank n="1">
+    <name>Right</name>
     <level-gal_us>24</level-gal_us>
    </tank>
   </fuel>
  </consumables>
-
-
- <!-- Beefy pilot, slim copilot -->
-
- <yasim>
-  <pa28>
-   <pilot-lb>200</pilot-lb>
-   <copilot-lb>150</copilot-lb>
-  </pa28>
- </yasim>
 
 </PropertyList>
 
