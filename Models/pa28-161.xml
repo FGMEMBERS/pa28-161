@@ -38,8 +38,7 @@
   <name>AI</name>
   <path>Aircraft/Instruments-3d/ai/ai.xml</path>
   <offsets>
-   <!-- fix me: set back for now -->
-   <x-m>1.920</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.232</y-m>
    <z-m>0.268</z-m>
   </offsets>
