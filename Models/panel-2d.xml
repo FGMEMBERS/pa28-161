@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<!--
+Legacy 2D instruments and actions for the 3D C172P cockpit.
+-->
+
+<PropertyList>
+
+ <name>PA28-161 2D instruments.</name>
+ <background>Aircraft/c172/Panels/Textures/transparent-bg.rgb</background>
+ <w>1024</w>
+ <h>410</h>
+ <view-height>500</view-height>
+
+ <instruments>
+
+  <!-- first row -->
+
+  <instrument include="../../Instruments/asi-160-knot.xml">
+   <name>Airspeed Indicator</name>
+   <x>200</x>
+   <y>340</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <instrument include="../../Instruments/attitude-indicator.xml">
+   <name>Attitude Gyro</name>
+   <x>290</x>
+   <y>340</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <instrument include="../../Instruments/altimeter.xml">
+   <name>Altimeter</name>
+   <x>380</x>
+   <y>340</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <instrument include="../../Instruments/nav1.xml">
+   <name>VOR 1 Gauge</name>
+   <x>470</x>
+   <y>340</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <!-- second row -->
+
+  <instrument include="../../Instruments/adf.xml">
+   <name>ADF Gauge</name>
+   <x>110</x>
+   <y>250</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <instrument include="../../Instruments/turn.xml">
+   <name>Turn Coordinator</name>
+   <x>200</x>
+   <y>250</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <instrument include="../../Instruments/gyro.xml">
+   <name>Directional Gyro</name>
+   <x>290</x>
+   <y>250</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <instrument include="../../Instruments/vertical.xml">
+   <name>Vertical Velocity Indicator</name>
+   <x>380</x>
+   <y>250</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+  <instrument include="../../Instruments/nav1.xml">
+   <name>VOR 2 Gauge</name>
+   <params>
+    <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag>
+    <nav-from-flag>/radios/nav[1]/from-flag</nav-from-flag>
+    <nav-radial-selected
+     >/radios/nav[1]/radials/selected-deg</nav-radial-selected>
+    <nav-gs-needle-deflection
+     >/radios/nav[1]/gs-needle-deflection</nav-gs-needle-deflection>
+    <nav-heading-needle-deflection
+     >/radios/nav[1]/heading-needle-deflection</nav-heading-needle-deflection>
+    <nav-has-gs-needle
+     >/sim/instrument-options/nav[1]/has-gs-needle</nav-has-gs-needle>
+    <nav-needles-pivot
+     >/sim/instrument-options/nav[1]/needles-pivot</nav-needles-pivot>
+   </params>
+   <x>470</x>
+   <y>250</y>
+   <w>80</w>
+   <h>80</h>
+  </instrument>
+
+ </instruments>
+
+</PropertyList>
+
+

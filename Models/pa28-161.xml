@@ -4,27 +4,25 @@
 
  <path>pa28-161.ac</path>
 
-<!--
  <panel>
   <name>PanelInstruments</name>
-  <path>Aircraft/c172p/Models/c172p-2d-panel.xml</path>
+  <path>Aircraft/pa28-161/Models/panel-2d.xml</path>
   <bottom-left>
-   <x-m>-0.35</x-m>
-   <y-m>-0.50</y-m>
-   <z-m>-0.10</z-m>
+   <x-m>1.93</x-m>
+   <y-m>-0.57</y-m>
+   <z-m>-0.15</z-m>
   </bottom-left>
   <bottom-right>
-   <x-m>-0.35</x-m>
-   <y-m> 0.50</y-m>
-   <z-m>-0.10</z-m>
+   <x-m>1.93</x-m>
+   <y-m> 0.57</y-m>
+   <z-m>-0.15</z-m>
   </bottom-right>
   <top-left>
-   <x-m>-0.35</x-m>
-   <y-m>-0.50</y-m>
-   <z-m> 0.25</z-m>
+   <x-m>1.93</x-m>
+   <y-m>-0.57</y-m>
+   <z-m>0.31</z-m>
   </top-left>
  </panel>
--->
 
  <!-- Visible up to 10km (6mi) -->
  <animation>
