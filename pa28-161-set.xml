@@ -14,6 +14,7 @@ spinning.
  <sim>
 
   <description>Piper Cherokee Warrior II (1979 model)</description>
+  <author>David Megginson</author>
 
 
   <!-- Use the YASim physics engine for the flight model -->
