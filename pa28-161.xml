@@ -1,17 +1,27 @@
 <airplane mass="1480">
 
 <!-- Approach configuration -->
-<approach speed="45" aoa="14">
-  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.0"/>
+<approach speed="45" aoa="14" fuel="1.0">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.1"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
+  <solve-weight idx="0" weight="170"/>
+  <solve-weight idx="1" weight="170"/>
+  <solve-weight idx="2" weight="100"/>
+  <solve-weight idx="3" weight="100"/>
+  <solve-weight idx="4" weight="115"/>
 </approach>
 
 <!-- Cruise configuration -->
-<cruise speed="127" alt="7500">
+<cruise speed="127" alt="7500" fuel="1.0">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="0.7"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
+  <solve-weight idx="0" weight="170"/>
+  <solve-weight idx="1" weight="170"/>
+  <solve-weight idx="2" weight="100"/>
+  <solve-weight idx="3" weight="100"/>
+  <solve-weight idx="4" weight="115"/>
 </cruise>
 
 <cockpit x="-2.5" y=".33" z="0.6"/>
@@ -82,12 +92,15 @@
   <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
 </gear>
 
-<tank x="-2.5" y="1.5" z="-0.25" capacity="144"/> 
-<tank x="-2.5" y="-1.5" z="-0.25" capacity="144"/> 
+<tank x="-2.4" y="1.5" z="-0.25" capacity="144"/> 
+<tank x="-2.4" y="-1.5" z="-0.25" capacity="144"/> 
 
 <ballast x="-2.0" y="0" z="0" mass="400"/> <!-- cockpit -->
 
-<weight x="-2.5" y=".33" z="0" mass-prop="/yasim/pa28/pilot-lb"/>
-<weight x="-2.5" y="-.33" z="0" mass-prop="/yasim/pa28/copilot-lb"/>
+<weight x="-2.05" y=".33" z="0" mass-prop="/yasim/pa28/pilot-lb"/>
+<weight x="-2.05" y="-.33" z="0" mass-prop="/yasim/pa28/copilot-lb"/>
+<weight x="-3.00" y="-.33" z="0" mass-prop="/yasim/pa28/left-pax-lb"/>
+<weight x="-3.00" y="-.33" z="0" mass-prop="/yasim/pa28/right-pax-lb"/>
+<weight x="-3.63" y="-.33" z="0" mass-prop="/yasim/pa28/baggage-lb"/>
 
 </airplane>
