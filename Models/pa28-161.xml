@@ -32,6 +32,17 @@
  </animation>
 
  <animation>
+  <type>select</type>
+  <object-name>Propeller</object-name>
+  <condition>
+   <less-than>
+    <property>engines/engine[0]/rpm</property>
+    <value>400</value>
+   </less-than>
+  </condition>
+ </animation>
+
+ <animation>
   <type>spin</type>
   <object-name>Propeller</object-name>
   <property>/engines/engine[0]/rpm</property>
