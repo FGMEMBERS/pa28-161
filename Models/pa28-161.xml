@@ -20,7 +20,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.423</y-m>
-   <z-m>0.251</z-m>
+   <z-m>0.256</z-m>
   </offsets>
  </model>
 
@@ -30,7 +30,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.336</y-m>
-   <z-m>0.265</z-m>
+   <z-m>0.268</z-m>
   </offsets>
  </model>
 
@@ -41,7 +41,7 @@
    <!-- fix me: set back for now -->
    <x-m>1.920</x-m>
    <y-m>-0.232</y-m>
-   <z-m>0.265</z-m>
+   <z-m>0.268</z-m>
   </offsets>
  </model>
 
@@ -51,7 +51,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.126</y-m>
-   <z-m>0.265</z-m>
+   <z-m>0.268</z-m>
   </offsets>
  </model>
 
@@ -61,7 +61,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.028</y-m>
-   <z-m>0.265</z-m>
+   <z-m>0.268</z-m>
   </offsets>
  </model>
 
@@ -71,7 +71,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.433</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.177</z-m>
   </offsets>
  </model>
 
@@ -81,7 +81,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.336</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.177</z-m>
   </offsets>
  </model>
 
@@ -91,7 +91,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.232</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.177</z-m>
   </offsets>
  </model>
 
@@ -101,7 +101,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.126</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.177</z-m>
   </offsets>
  </model>
 
@@ -111,7 +111,27 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.028</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.177</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>FUEL_OIL</name>
+  <path>Aircraft/Instruments-3d/pa28-fuel-oil/pa28-fuel-oil.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.100</y-m>
+   <z-m>0.091</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>EGT</name>
+  <path>Aircraft/Instruments-3d/egt/egt.xml</path>
+  <offsets>
+   <x-m>1.922</x-m>
+   <y-m>-0.280</y-m>
+   <z-m>0.005</z-m>
   </offsets>
  </model>
 
@@ -121,7 +141,7 @@
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.074</y-m>
-   <z-m>0.008</z-m>
+   <z-m>-0.007</z-m>
   </offsets>
  </model>
 
@@ -144,8 +164,7 @@
  </animation>
 
  <animation>
-  <name>AlphaOrderPanelGroup</name>
-  <object-name>CLOCK</object-name>
+  <name>InstrumentGroup</name>
   <object-name>ASI</object-name>
   <object-name>AI</object-name>
   <object-name>ALT</object-name>
@@ -156,7 +175,19 @@
   <object-name>VSI</object-name>
   <object-name>VOR2</object-name>
   <object-name>TACH</object-name>
+  <object-name>FUEL_OIL</object-name>
+ </animation>
+
+ <animation>
+  <name>PlacardGroup</name>
+  <object-name>TakeoffPlacard</object-name>
+ </animation>
+
+ <animation>
+  <name>PanelAlphaOrderGroup</name>
+  <object-name>InstrumentGroup</object-name>
   <object-name>Panel</object-name>
+  <object-name>PlacardGroup</object-name>
  </animation>
 
  <animation>

@@ -8,7 +8,57 @@ MATERIAL "Interior" rgb 0.518797 0.62406 0.593985 amb 1 1 1 emis 0 0 0 spec 1 1 
 MATERIAL "Default" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 72 trans 0
 MATERIAL "Propeller" rgb 0 0 0 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 72 trans 0
 OBJECT world
-kids 34
+kids 37
+OBJECT poly
+name "TakeoffPlacard"
+texture "/home/david/src/blender/Aircraft/pa28-161/placards.rgb"
+texrep 1 1
+numvert 6
+1.928017 0.075828 0.257707
+1.928017 0.053416 0.257707
+1.928018 0.053416 0.429692
+1.928018 0.075828 0.429692
+1.928018 0.064622 0.429692
+1.928017 0.064622 0.257707
+numsurf 2
+SURF 0x00
+mat 0
+refs 4
+0 0.9921875 0.982421875
+3 0.37109375 0.982421875
+4 0.37109375 0.931640625
+5 0.9921875 0.931640625
+SURF 0x00
+mat 0
+refs 4
+4 0.37109375 0.931640625
+2 0.37109375 0.880859375
+1 0.9921875 0.880859375
+5 0.9921875 0.931640625
+kids 0
+OBJECT poly
+name "ManueveringPlacard"
+texture "/home/david/src/blender/Aircraft/pa28-161/placards.rgb"
+texrep 1 1
+numvert 4
+1.928017 0.223614 0.274523
+1.928017 0.206739 0.274523
+1.928017 0.206739 0.30663
+1.928017 0.223614 0.30663
+numsurf 1
+SURF 0x00
+mat 0
+refs 4
+0 0.1875 0.982421875
+3 0.015625 0.982421875
+2 0.015625 0.880859375
+1 0.1875 0.880859375
+kids 0
+OBJECT poly
+name "Plane.002"
+numvert 0
+numsurf 0
+kids 0
 OBJECT poly
 name "Panel"
 texture "/home/david/src/blender/Aircraft/pa28-161/panel.rgb"
