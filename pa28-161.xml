@@ -8,7 +8,7 @@
 </approach>
 
 <!-- Cruise configuration -->
-<cruise speed="123" alt="7000">
+<cruise speed="127" alt="7500">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="0.7"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
@@ -54,9 +54,9 @@
 </vstab>
 
 <propeller radius="1.0"
-	   cruise-speed="125" cruise-rpm="2665"
+	   cruise-speed="127" cruise-rpm="2700"
            cruise-alt="8000" cruise-power="120"
-           takeoff-power="140.8" takeoff-rpm="2200"
+           takeoff-power="144" takeoff-rpm="2500"
            eng-power="160" eng-rpm="2800"
            x="-1" y="0" z="0" mass="400" moment="8">
   <actionpt x="0" y="0" z="0"/>
