@@ -5,6 +5,7 @@
  <path>pa28-161.ac</path>
 
  <model>
+  <name>COMP</name>
   <path>Aircraft/Instruments-3d/comp/comp.xml</path>
   <offsets>
    <x-m>1.930</x-m>
@@ -14,118 +15,148 @@
  </model>
 
  <model>
+  <name>CLOCK</name>
   <path>Aircraft/Instruments-3d/clock/clock.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.436</y-m>
-   <z-m>0.231</z-m>
+   <y-m>-0.423</y-m>
+   <z-m>0.251</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>ASI</name>
   <path>Aircraft/Instruments-3d/asi/asi.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.353</y-m>
-   <z-m>0.248</z-m>
+   <y-m>-0.336</y-m>
+   <z-m>0.265</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>AI</name>
   <path>Aircraft/Instruments-3d/ai/ai.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
-   <y-m>-0.248</y-m>
-   <z-m>0.248</z-m>
+   <!-- fix me: set back for now -->
+   <x-m>1.920</x-m>
+   <y-m>-0.232</y-m>
+   <z-m>0.265</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>ALT</name>
   <path>Aircraft/Instruments-3d/alt/alt.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.140</y-m>
-   <z-m>0.248</z-m>
+   <y-m>-0.126</y-m>
+   <z-m>0.265</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>VOR1</name>
   <path>Aircraft/Instruments-3d/vor/vor.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.044</y-m>
-   <z-m>0.248</z-m>
+   <y-m>-0.028</y-m>
+   <z-m>0.265</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>ADF</name>
   <path>Aircraft/Instruments-3d/adf/adf.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.445</y-m>
-   <z-m>0.151</z-m>
+   <y-m>-0.433</y-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>TC</name>
   <path>Aircraft/Instruments-3d/tc/tc.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.353</y-m>
-   <z-m>0.151</z-m>
+   <y-m>-0.336</y-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>HI</name>
   <path>Aircraft/Instruments-3d/hi/hi.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.248</y-m>
-   <z-m>0.151</z-m>
+   <y-m>-0.232</y-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>VSI</name>
   <path>Aircraft/Instruments-3d/vsi/vsi.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.140</y-m>
-   <z-m>0.151</z-m>
+   <y-m>-0.126</y-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>VOR2</name>
   <path>Aircraft/Instruments-3d/vor/vor.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.044</y-m>
-   <z-m>0.151</z-m>
+   <y-m>-0.028</y-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
  <model>
+  <name>TACH</name>
   <path>Aircraft/Instruments-3d/tach/tach.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.083</y-m>
-   <z-m>-0.051</z-m>
+   <y-m>-0.074</y-m>
+   <z-m>0.008</z-m>
   </offsets>
  </model>
 
+<!--
  <model>
   <path>Aircraft/Instruments-3d/kx170b/kx170b.xml</path>
   <offsets>
-   <x-m>1.95</x-m>
-   <y-m>0.1</y-m>
-   <z-m>0.140</z-m>
+   <x-m>1.93</x-m>
+   <y-m>0.12</y-m>
+   <z-m>0.220</z-m>
   </offsets>
  </model>
+-->
 
  <!-- Visible up to 10km (6mi) -->
  <animation>
   <type>range</type>
   <min-m>0</min-m>
   <max-m>10000</max-m>
+ </animation>
+
+ <animation>
+  <name>AlphaOrderPanelGroup</name>
+  <object-name>CLOCK</object-name>
+  <object-name>ASI</object-name>
+  <object-name>AI</object-name>
+  <object-name>ALT</object-name>
+  <object-name>VOR1</object-name>
+  <object-name>ADF</object-name>
+  <object-name>TC</object-name>
+  <object-name>HI</object-name>
+  <object-name>VSI</object-name>
+  <object-name>VOR2</object-name>
+  <object-name>TACH</object-name>
+  <object-name>Panel</object-name>
  </animation>
 
  <animation>

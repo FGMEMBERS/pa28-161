@@ -2,7 +2,7 @@
 
 <!-- Approach configuration -->
 <approach speed="45" aoa="14" fuel="1.0">
-  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.1"/>
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.0"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
   <solve-weight idx="0" weight="170"/>
@@ -68,7 +68,7 @@
            cruise-alt="8000" cruise-power="120"
            takeoff-power="144" takeoff-rpm="2500"
            eng-power="160" eng-rpm="2800"
-           x="-1" y="0" z="0" mass="400" moment="8">
+           x="-1" y="0" z="0" mass="400" moment="4">
   <actionpt x="0" y="0" z="0"/>
   <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
