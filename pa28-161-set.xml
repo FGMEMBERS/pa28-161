@@ -44,7 +44,6 @@ spinning.
   <!-- For now, use the Cessna 172 sound configuration (same engine) -->
 
   <sound>
-   <audible archive="y">true</audible>
    <path archive="y">Aircraft/c172/c172-sound.xml</path>
   </sound>
 
