@@ -134,6 +134,7 @@ spinning.
 
 
  <!-- Start with the magnetos on -->
+ <!-- Add a bit of fixed aileron trim to help fly level -->
 
  <controls>
   <engines>
@@ -141,6 +142,11 @@ spinning.
     <magnetos>3</magnetos>
    </engine>
   </engines>
+  <flight>
+   <aileron-trim>0.01</aileron-trim>
+   <elevator-trim>0</elevator-trim>
+   <rudder-trim>0</rudder-trim>
+  </flight>
  </controls>
 
 
@@ -180,17 +186,6 @@ spinning.
    </tank>
   </fuel>
  </consumables>
-
-
- <!-- Add a bit of fixed aileron trim to help fly level -->
-
- <controls>
-  <flight>
-   <aileron-trim>0.01</aileron-trim>
-   <elevator-trim>0</elevator-trim>
-   <rudder-trim>0</rudder-trim>
-  </flight>
- </controls>
 
 
  <!-- Beefy pilot, slim copilot -->
