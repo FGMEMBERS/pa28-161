@@ -1,8 +1,26 @@
-PIPER WARRIOR II PERFORMANCE DATA 
-=================================
+PIPER CHEROKEE WARRIOR II PERFORMANCE DATA 
+==========================================
 
-These numbers apply to the 160 hp variant of the Warrior II; they come
-from the Piper POH.
+The Piper Cherokee Warrior II is a four-seat, fixed-gear aircraft with
+performance is very similar to that of the Cessna 172n and 172p, which
+share the same 160 hp Lycoming O-320 engine.  Next to the Cessna 172,
+the Warrior is probably the most common trainer at flight schools as
+well as a popular entry-level aircraft for new owners and for rental
+pilots at FBO's.
+
+Like the 172, the Warrior is a very easy plane to fly: its stall is
+gentle, and its responsiveness to control inputs is slow (making it
+harder to overcontrol, an especially useful trait for new IFR pilots).
+There are a few important differences from the 172p aside from the low
+wings:
+
+- it does not glide quite as well, so the flare is shorter (don't let
+  the speed decay too much) and there's a slightly higher stall speed
+
+- it is a little gentler in the stall and a little more stable in
+  turbulence
+
+Here are the numbers from the Piper POH:
 
 Speeds
 ------
@@ -39,5 +57,5 @@ Fuel
   Total fuel:                50 gal US
   Usable fuel:               48 gal US
   Grade:                     100LL/100 (Avgas)
-  GPH (75%, 8000 ft):        10.0 gph
-  GPH (55%, 8000 ft):         7.0 gph
+  GPH (75%, 8000 ft):        10.0 gph ROP, 8.8 gph LOP/WOT
+  GPH (55%, 8000 ft):         7.0 gph ROP, 5.5 gph LOP/WOT
