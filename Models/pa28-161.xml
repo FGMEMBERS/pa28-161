@@ -28,7 +28,7 @@
   <name>ASI</name>
   <path>Aircraft/Instruments-3d/asi/asi.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.336</y-m>
    <z-m>0.268</z-m>
   </offsets>
@@ -49,7 +49,7 @@
   <name>ALT</name>
   <path>Aircraft/Instruments-3d/alt/alt.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.126</y-m>
    <z-m>0.268</z-m>
   </offsets>
@@ -59,19 +59,20 @@
   <name>VOR1</name>
   <path>Aircraft/Instruments-3d/vor/vor.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.028</y-m>
    <z-m>0.268</z-m>
   </offsets>
  </model>
 
+ <!-- FIXME: set back for now -->
  <model>
   <name>ADF</name>
   <path>Aircraft/Instruments-3d/adf/adf.xml</path>
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.433</y-m>
-   <z-m>0.177</z-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
@@ -79,9 +80,9 @@
   <name>TC</name>
   <path>Aircraft/Instruments-3d/tc/tc.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.336</y-m>
-   <z-m>0.177</z-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
@@ -89,9 +90,9 @@
   <name>HI</name>
   <path>Aircraft/Instruments-3d/hi/hi.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.232</y-m>
-   <z-m>0.177</z-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
@@ -99,9 +100,9 @@
   <name>VSI</name>
   <path>Aircraft/Instruments-3d/vsi/vsi.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.126</y-m>
-   <z-m>0.177</z-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
@@ -109,19 +110,20 @@
   <name>VOR2</name>
   <path>Aircraft/Instruments-3d/vor/vor.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.028</y-m>
-   <z-m>0.177</z-m>
+   <z-m>0.180</z-m>
   </offsets>
  </model>
 
+ <!-- set back for now -->
  <model>
   <name>FUEL_OIL</name>
   <path>Aircraft/Instruments-3d/pa28-fuel-oil/pa28-fuel-oil.xml</path>
   <offsets>
    <x-m>1.922</x-m>
    <y-m>-0.100</y-m>
-   <z-m>0.091</z-m>
+   <z-m>0.102</z-m>
   </offsets>
  </model>
 
@@ -129,9 +131,9 @@
   <name>EGT</name>
   <path>Aircraft/Instruments-3d/egt/egt.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.280</y-m>
-   <z-m>0.005</z-m>
+   <z-m>0.020</z-m>
   </offsets>
  </model>
 
@@ -139,9 +141,9 @@
   <name>TACH</name>
   <path>Aircraft/Instruments-3d/tach/tach.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
+   <x-m>1.925</x-m>
    <y-m>-0.074</y-m>
-   <z-m>-0.007</z-m>
+   <z-m>0.013</z-m>
   </offsets>
  </model>
 
