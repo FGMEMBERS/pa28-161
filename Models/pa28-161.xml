@@ -125,6 +125,15 @@
   </offsets>
  </model>
 
+ <model>
+  <path>Aircraft/Instruments-3d/kx170b/kx170b.xml</path>
+  <offsets>
+   <x-m>1.95</x-m>
+   <y-m>0.1</y-m>
+   <z-m>0.140</z-m>
+  </offsets>
+ </model>
+
  <!-- Visible up to 10km (6mi) -->
  <animation>
   <type>range</type>
