@@ -117,6 +117,10 @@ spinning.
     <max-lb>200</max-lb>
   </weight>
 
+  <help>
+   <title>Piper Cherokee Warrior II</title>
+  </help>
+
  </sim>
 
 
