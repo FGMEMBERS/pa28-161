@@ -33,15 +33,6 @@ spinning.
   </panel>
 
 
-  <!-- For now, use the Cessna 172 electrical system -->
-
-  <systems>
-    <electrical>
-      <path>Aircraft/Generic/generic-electrical.xml</path>
-    </electrical>
-  </systems>
-
-
   <!-- For now, use the Cessna 172 sound configuration (same engine) -->
 
   <sound>
