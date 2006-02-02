@@ -29,7 +29,7 @@
 <fuselage ax="0.5" ay="0" az="0" bx="-7.75" by="0" bz="0"
           width="1.5" taper="0.2" midpoint="0.3"/>
 
-<wing x="-2.75" y="0.6" z="-0.75" taper="0.65" incidence="2" twist="-2"
+<wing x="-2.75" y="0.6" z="-0.75" taper="0.65" incidence="-2" twist="2"
       length="4.5" chord="1.65" sweep="0" dihedral="5" camber="0.1">
   <stall aoa="18" width="2.0" peak="1.5"/>
   <flap0 start="0" end="0.5" lift="1.5" drag="1.5"/>
@@ -44,7 +44,7 @@
 		  prop="/surface-positions/right-aileron-pos-norm"/>
 </wing>
 
-<hstab x="-6.5" y="0.00" z=".15" taper="1.0" effectiveness="2" incidence="-1"
+<hstab x="-6.5" y="0.00" z=".15" taper="1.0" effectiveness="2" incidence="1"
        length="1.9" chord="0.9" sweep="0">
   <stall aoa="17" width="4" peak="1.5"/>
   <flap0 start="0" end="1" lift="1.65" drag="1.2"/>
