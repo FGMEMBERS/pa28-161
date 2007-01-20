@@ -107,7 +107,7 @@
 
  <model>
   <name>VOR2</name>
-  <path>Aircraft/Instruments-3d/vor/vor.xml</path>
+  <path>Aircraft/Instruments-3d/vor/vor2.xml</path>
   <offsets>
    <x-m>1.925</x-m>
    <y-m>-0.028</y-m>
