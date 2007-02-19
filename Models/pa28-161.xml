@@ -64,6 +64,16 @@
   </offsets>
  </model>
 
+ <model>
+  <name>RadioStack</name>
+  <path>Aircraft/Instruments-3d/radio_stack/radio-stack.xml</path>
+  <offsets>
+   <x-m>1.9312</x-m>
+   <y-m>0.120</y-m>
+   <z-m>0.212</z-m>
+  </offsets>
+ </model>
+
  <!-- FIXME: set back for now -->
  <model>
   <name>ADF</name>
