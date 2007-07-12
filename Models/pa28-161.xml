@@ -215,7 +215,7 @@
  <animation>
   <type>spin</type>
   <object-name>Propeller</object-name>
-  <property>/engines/engine[0]/rpm</property>
+  <property>engines/engine[0]/rpm</property>
   <factor>-1</factor>
   <center>
    <x-m>0</x-m>
@@ -232,7 +232,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
-  <property>/surface-positions/left-aileron-pos-norm</property>
+  <property>surface-positions/left-aileron-pos-norm</property>
   <factor>20</factor>
   <center>
    <x-m>3.13</x-m>
@@ -249,7 +249,7 @@
  <animation>
   <type>rotate</type>
   <object-name>RightAileron</object-name>
-  <property>/surface-positions/right-aileron-pos-norm</property>
+  <property>surface-positions/right-aileron-pos-norm</property>
   <factor>20</factor>
   <center>
    <x-m>3.13</x-m>
@@ -266,7 +266,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftFlap</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>-45</factor>
   <center>
    <x-m>3.30</x-m>
@@ -283,7 +283,7 @@
  <animation>
   <type>rotate</type>
   <object-name>RightFlap</object-name>
-  <property>/surface-positions/flap-pos-norm</property>
+  <property>surface-positions/flap-pos-norm</property>
   <factor>45</factor>
   <center>
    <x-m>3.30</x-m>
@@ -301,7 +301,7 @@
   <type>rotate</type>
   <object-name>Stabilator</object-name>
   <object-name>AntiServoTab</object-name>
-  <property>/surface-positions/elevator-pos-norm</property>
+  <property>surface-positions/elevator-pos-norm</property>
   <factor>15</factor>
   <center>
    <x-m>6.5</x-m>
@@ -318,7 +318,7 @@
  <animation>
   <type>rotate</type>
   <object-name>AntiServoTab</object-name>
-  <property>/surface-positions/elevator-pos-norm</property>
+  <property>surface-positions/elevator-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>6.79</x-m>
@@ -335,7 +335,7 @@
  <animation>
   <type>rotate</type>
   <object-name>AntiServoTab</object-name>
-  <property>/controls/flight/elevator-trim</property>
+  <property>controls/flight/elevator-trim</property>
   <factor>-30</factor>
   <center>
    <x-m>6.79</x-m>
@@ -354,7 +354,7 @@
   <object-name>NoseWheel</object-name>
   <object-name>NoseWheelFairing</object-name>
   <object-name>NoseWheelStrut</object-name>
-  <property>/surface-positions/rudder-pos-norm</property>
+  <property>surface-positions/rudder-pos-norm</property>
   <factor>-17.5</factor>
   <center>
    <x-m>1.04</x-m>
@@ -371,7 +371,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Rudder</object-name>
-  <property>/surface-positions/rudder-pos-norm</property>
+  <property>surface-positions/rudder-pos-norm</property>
   <factor>17.5</factor>
   <center>
    <x-m>6.36</x-m>
