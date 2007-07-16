@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
+<PropertyList>
+
+ <name>pa28-Panel</name>
+ <background>Aircraft/pa28-161/Panel/transparent-bg.rgb</background>
+ <w>1024</w>
+ <h>768</h>
+
+<instruments>
+
+<instrument>
+  <name>panel hotspots</name>
+  <x>512</x>
+  <y>384</y>
+  <w>1024</w>
+  <h>768</h>
+  <w-base>1024</w-base>
+  <h-base>768</h-base>
+
+ <actions> 
+
+              Heading Offset             
+
+   <action>
+     <name>small decrease</name>
+     <button>0</button>
+     <x>-260</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <step>-1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large decrease</name>
+     <button>1</button>
+     <x>-260</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <step>-5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>small increase</name>
+     <button>0</button>
+     <x>-253</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <step>1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large increase</name>
+     <button>1</button>
+     <x>-253</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <step>5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+
+            Autopilot HdgBug           
+
+   <action>
+     <name>small decrease</name>
+     <button>0</button>
+     <x>-203.0</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/autopilot/settings/heading-bug-deg</property>
+       <step>-1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large decrease</name>
+     <button>1</button>
+     <x>-203</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/autopilot/settings/heading-bug-deg</property>
+       <step>-5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>small increase</name>
+     <button>0</button>
+     <x>-196</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/autopilot/settings/heading-bug-deg</property>
+       <step>1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large increase</name>
+     <button>1</button>
+     <x>-196</x>
+     <y>55</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/autopilot/settings/heading-bug-deg</property>
+       <step>5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+
+		VOR 1 Radial adjust  
+   <action>
+     <name>small decrease</name>
+     <button>0</button>
+     <x>-60</x>
+     <y>183</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav/radials/selected-deg</property>
+       <step>-1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large decrease</name>
+     <button>1</button>
+     <x>-60</x>
+     <y>183</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav/radials/selected-deg</property>
+       <step>-5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>small increase</name>
+     <button>0</button>
+     <x>-53</x>
+     <y>183</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav/radials/selected-deg</property>
+       <step>1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large increase</name>
+     <button>1</button>
+     <x>-53</x>
+     <y>183</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav/radials/selected-deg</property>
+       <step>5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+
+		VOR 2 Radial adjust  
+   <action>
+     <name>small decrease</name>
+     <button>0</button>
+     <x>-60</x>
+     <y>57</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <step>-1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large decrease</name>
+     <button>1</button>
+     <x>-60</x>
+     <y>57</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <step>-5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>small increase</name>
+     <button>0</button>
+     <x>-53</x>
+     <y>57</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <step>1</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>large increase</name>
+     <button>1</button>
+     <x>-53</x>
+     <y>57</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <step>5</step>
+       <min>0</min>
+       <max>360</max>
+       <wrap>1</wrap>
+     </binding>
+   </action>
+
+ 
+             Altimeter 
+  
+   <action>
+     <name>decrease calibrate fine</name>
+     <button>0</button>
+     <x>-157.5</x>
+     <y>181</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/altimeter/setting-inhg</property>
+       <step>-0.01</step>
+       <min>26.0</min>
+       <max>33.0</max>
+       <wrap>false</wrap>
+     </binding>
+   </action>
+
+   <action>
+     <name>decrease calibrate coarse</name>
+     <button>1</button>
+     <x>-157.5</x>
+     <y>181</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/altimeter/setting-inhg</property>
+       <step>-0.1</step>
+      <min>26.0</min>
+       <max>33.0</max>
+       <wrap>false</wrap>
+     </binding>
+   </action>
+
+   <action>
+     <name>increase calibrate fine</name>
+     <button>0</button>
+     <x>-150.5</x>
+     <y>181</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/altimeter/setting-inhg</property>
+       <step>0.01</step>
+       <min>26.0</min>
+       <max>33.0</max>
+       <wrap>false</wrap>
+     </binding>
+   </action>
+
+   <action>
+     <name>increase calibrate coarse</name>
+     <button>1</button>
+     <x>-150.5</x>
+     <y>181</y>
+     <w>7</w>
+     <h>16</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/instrumentation/altimeter/setting-inhg</property>
+       <step>0.1</step>
+       <min>26.0</min>
+      <max>33.0</max>
+       <wrap>false</wrap>
+     </binding>
+   </action>
+
+  </actions>
+
+ </instrument>
+
+</instruments>
+
+</PropertyList>

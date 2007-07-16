@@ -4,6 +4,25 @@
 
  <path>pa28-161.ac</path>
 
+<panel>
+  <path>Aircraft/pa28-161/Panel/pa28-panel.xml</path>
+  <bottom-left>
+    <x-m>1.925</x-m>
+    <y-m>-0.530</y-m>
+    <z-m>-0.168</z-m>
+  </bottom-left>
+  <bottom-right>
+    <x-m>1.925</x-m>
+    <y-m>0.530</y-m>
+    <z-m>-0.168</z-m>
+  </bottom-right>
+  <top-left>
+    <x-m>1.925</x-m>
+    <y-m>-0.530</y-m>
+    <z-m>0.372</z-m>
+  </top-left>
+</panel>
+
  <model>
   <name>COMP</name>
   <path>Aircraft/Instruments-3d/comp/comp.xml</path>
@@ -235,14 +254,14 @@
   <property>surface-positions/left-aileron-pos-norm</property>
   <factor>20</factor>
   <center>
-   <x-m>3.13</x-m>
-   <y-m>-5.05</y-m>
-   <z-m>0.05</z-m>
+   <x-m>3.1338</x-m>
+   <y-m>-5.0553</y-m>
+   <z-m>0.0468</z-m>
   </center>
   <axis>
-   <x>0.05</x>
+   <x>0.0814</x>
    <y>1.0</y>
-   <z>-0.1</z>
+   <z>-0.1290</z>
   </axis>
  </animation>
 
@@ -252,14 +271,14 @@
   <property>surface-positions/right-aileron-pos-norm</property>
   <factor>20</factor>
   <center>
-   <x-m>3.13</x-m>
-   <y-m>5.05</y-m>
-   <z-m>0.05</z-m>
+   <x-m>3.1338</x-m>
+   <y-m>5.0553</y-m>
+   <z-m>0.0468</z-m>
   </center>
   <axis>
-   <x>-0.05</x>
+   <x>-0.0814</x>
    <y>1.0</y>
-   <z>0.1</z>
+   <z>0.1290</z>
   </axis>
  </animation>
 
