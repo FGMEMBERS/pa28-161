@@ -22,16 +22,44 @@
 
  <actions> 
 
+   <action>
+     <name>left rudder trim</name>
+     <button>0</button>
+     <x>45</x>
+     <y>-321</y>
+     <w>16</w>
+     <h>25</h>
+     <binding>
+      <command>property-adjust</command>
+      <property>/controls/flight/rudder-trim</property>
+      <step>-0.001</step>
+     </binding>
+   </action>   
+
+   <action>
+     <name>right rudder trim</name>
+     <button>0</button>
+     <x>61</x>
+     <y>-321</y>
+     <w>16</w>
+     <h>25</h>
+     <binding>
+      <command>property-adjust</command>
+      <property>/controls/flight/rudder-trim</property>
+      <step>0.001</step>
+     </binding>
+   </action>   
+
               Heading Offset             
 
    <action>
      <name>small decrease</name>
      <button>0</button>
      <x>-260</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
-     <binding>
+     <h>12.5</h>
+      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/heading-indicator/offset-deg</property>
        <step>-1</step>
@@ -45,9 +73,9 @@
      <name>large decrease</name>
      <button>1</button>
      <x>-260</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/heading-indicator/offset-deg</property>
@@ -62,9 +90,9 @@
      <name>small increase</name>
      <button>0</button>
      <x>-253</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/heading-indicator/offset-deg</property>
@@ -79,9 +107,9 @@
      <name>large increase</name>
      <button>1</button>
      <x>-253</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/heading-indicator/offset-deg</property>
@@ -98,9 +126,9 @@
      <name>small decrease</name>
      <button>0</button>
      <x>-203.0</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/autopilot/settings/heading-bug-deg</property>
@@ -115,9 +143,9 @@
      <name>large decrease</name>
      <button>1</button>
      <x>-203</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/autopilot/settings/heading-bug-deg</property>
@@ -132,9 +160,9 @@
      <name>small increase</name>
      <button>0</button>
      <x>-196</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/autopilot/settings/heading-bug-deg</property>
@@ -149,9 +177,9 @@
      <name>large increase</name>
      <button>1</button>
      <x>-196</x>
-     <y>55</y>
+     <y>132</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/autopilot/settings/heading-bug-deg</property>
@@ -167,9 +195,9 @@
      <name>small decrease</name>
      <button>0</button>
      <x>-60</x>
-     <y>183</y>
+     <y>232</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav/radials/selected-deg</property>
@@ -184,9 +212,9 @@
      <name>large decrease</name>
      <button>1</button>
      <x>-60</x>
-     <y>183</y>
+     <y>232</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav/radials/selected-deg</property>
@@ -201,9 +229,9 @@
      <name>small increase</name>
      <button>0</button>
      <x>-53</x>
-     <y>183</y>
+     <y>232</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav/radials/selected-deg</property>
@@ -218,9 +246,9 @@
      <name>large increase</name>
      <button>1</button>
      <x>-53</x>
-     <y>183</y>
+     <y>232</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav/radials/selected-deg</property>
@@ -236,9 +264,9 @@
      <name>small decrease</name>
      <button>0</button>
      <x>-60</x>
-     <y>57</y>
+     <y>134</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav[1]/radials/selected-deg</property>
@@ -253,9 +281,9 @@
      <name>large decrease</name>
      <button>1</button>
      <x>-60</x>
-     <y>57</y>
+     <y>134</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav[1]/radials/selected-deg</property>
@@ -270,9 +298,9 @@
      <name>small increase</name>
      <button>0</button>
      <x>-53</x>
-     <y>57</y>
+     <y>134</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav[1]/radials/selected-deg</property>
@@ -287,9 +315,9 @@
      <name>large increase</name>
      <button>1</button>
      <x>-53</x>
-     <y>57</y>
+     <y>134</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/nav[1]/radials/selected-deg</property>
@@ -307,9 +335,9 @@
      <name>decrease calibrate fine</name>
      <button>0</button>
      <x>-157.5</x>
-     <y>181</y>
+     <y>231</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/altimeter/setting-inhg</property>
@@ -324,9 +352,9 @@
      <name>decrease calibrate coarse</name>
      <button>1</button>
      <x>-157.5</x>
-     <y>181</y>
+     <y>231</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/altimeter/setting-inhg</property>
@@ -341,9 +369,9 @@
      <name>increase calibrate fine</name>
      <button>0</button>
      <x>-150.5</x>
-     <y>181</y>
+     <y>231</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/altimeter/setting-inhg</property>
@@ -358,9 +386,9 @@
      <name>increase calibrate coarse</name>
      <button>1</button>
      <x>-150.5</x>
-     <y>181</y>
+     <y>231</y>
      <w>7</w>
-     <h>16</h>
+     <h>12.5</h>
      <binding>
        <command>property-adjust</command>
        <property>/instrumentation/altimeter/setting-inhg</property>
@@ -370,6 +398,903 @@
        <wrap>false</wrap>
      </binding>
    </action>
+
+<!--     Switches     -->
+
+   <action>
+     <name>toggle nav-lights</name>
+     <button>0</button>
+     <x>45</x>
+     <y>60</y>
+     <w>10</w>
+     <h>40</h>
+     <binding>
+       <command>nasal</command>
+       <script>pa28.nav_light_switch()</script>
+     </binding>
+   </action>
+   
+   <action>
+     <name>battery switch</name>
+     <button>0</button>
+     <x>60</x>
+     <y>60</y>
+     <w>10</w>
+     <h>40</h>
+     <binding>
+       <command>nasal</command>
+       <script>pa28.battery_switch()</script>
+     </binding>
+   </action>
+   
+   <action>
+     <name>alternator switch</name>
+     <button>0</button>
+     <x>70</x>
+     <y>60</y>
+     <w>10</w>
+     <h>40</h>
+     <binding>
+       <command>nasal</command>
+       <script>pa28.alternator_switch()</script>
+     </binding>
+   </action>
+   
+   <action>
+     <name>fuel pump</name>
+     <button>0</button>
+     <x>88</x>
+     <y>60</y>
+     <w>18</w>
+     <h>40</h>
+     <binding>
+       <command>nasal</command>
+       <script>pa28.f_pump_switch()</script>
+     </binding>
+   </action>
+
+   <action>
+     <name>landing lights</name>
+     <button>0</button>
+     <x>112</x>
+     <y>60</y>
+     <w>18</w>
+     <h>40</h>
+     <binding>
+   <command>nasal</command>
+   <script>pa28.landing_light_switch()</script>
+     </binding>
+   </action>
+
+   <action>
+     <name>rotating beacon</name>
+     <button>0</button>
+     <x>136</x>
+     <y>60</y>
+     <w>10</w>
+     <h>40</h>
+     <binding>
+       <command>nasal</command>
+       <script>pa28.fin_strobe_light_switch()</script>
+     </binding>
+   </action>
+
+   <action>
+     <name>strobe lights</name>
+     <button>0</button>
+     <x>146</x>
+     <y>60</y>
+     <w>10</w>
+     <h>40</h>
+     <binding>
+       <command>nasal</command>
+       <script>pa28.wing_strobe_light_switch()</script>
+     </binding>
+   </action>
+
+   <action>
+     <name>pitot heat</name>
+     <button>0</button>
+     <x>160</x>
+     <y>60</y>
+     <w>20</w>
+     <h>40</h>
+     <binding>
+   <command>nasal</command>
+   <script>pa28.pitot_heat_switch()</script>
+     </binding>
+   </action>
+
+   <action>
+     <name>increase panel lights</name>
+     <button>0</button>
+     <x>183</x>
+     <y>60</y>
+     <w>10</w>
+     <h>20</h>
+     <repeatable>true</repeatable>
+     <binding>
+      <command>nasal</command>
+      <script>pa28.panel_light_switch(1)</script>
+     </binding>
+   </action>   
+
+   <action>
+     <name>decrease panel lights</name>
+     <button>0</button>
+     <x>183</x>
+     <y>80</y>
+     <w>10</w>
+     <h>20</h>
+     <repeatable>true</repeatable>
+     <binding>
+      <command>nasal</command>
+      <script>pa28.panel_light_switch(-1)</script>
+     </binding>
+   </action>   
+
+		magneto switch		
+
+   <action>
+     <name>decrease mags</name>
+     <button>0</button>
+     <x>-228.0</x>
+     <y>-56</y>
+     <w>8</w>
+     <h>31</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/controls/engines/engine/magnetos</property>
+       <step>-1</step>
+       <min>0</min>
+       <max>3</max>
+     </binding>
+   </action>
+
+   <action>
+     <name>increase mags</name>
+     <button>0</button>
+     <x>-220</x>
+     <y>-56</y>
+     <w>8</w>
+     <h>31</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>/controls/engines/engine/magnetos</property>
+       <step>1</step>
+       <min>0</min>
+       <max>3</max>
+     </binding>
+   </action>
+
+		Starter		
+   <action>
+     <name>starter</name>
+     <button>0</button>
+     <x>-212</x>
+     <y>-56</y>
+     <w>8</w>
+     <h>31</h>
+   <binding>
+     <command>property-assign</command>
+     <property>/controls/switches/starter</property>
+     <value >1</value>
+   </binding>
+   <mod-up>
+     <binding>
+       <command>property-assign</command>
+       <property>/controls/switches/starter</property>
+       <value>0</value>
+     </binding>
+   </mod-up>
+   </action>
+
+   <action>
+     <name>carb heat</name>
+     <button>0</button>
+     <x>101</x>
+     <y>-42</y>
+     <w>16</w>
+     <h>59</h>
+     <binding>
+   <command>nasal</command>
+   <script>pa28.carb_heat()</script>
+     </binding>
+   </action>   
+
+   <action>
+     <name>primer</name>
+     <button>0</button>
+     <x>-16</x>
+     <y>-44</y>
+     <w>16</w>
+     <h>25</h>
+     <binding>
+   <command>nasal</command>
+   <script>pa28.primer()</script>
+     </binding>
+   </action>   
+
+   <action>
+    <name>Increase Mixture</name>
+    <button>0</button>
+     <x>67</x>
+     <y>-36</y>
+     <w>25</w>
+     <h>75</h>
+    <repeatable type="bool">true</repeatable>
+    <binding> 
+     <command>nasal</command>
+     <script>controls.adjMixture(1)</script>
+    </binding>
+   </action>
+
+   <action>
+    <name>Decrease Mixture</name>
+    <button>0</button>
+     <x>82</x>
+     <y>-111</y>
+     <w>25</w>
+     <h>75</h>
+    <repeatable type="bool">true</repeatable>
+    <binding> 
+     <command>nasal</command>
+     <script>controls.adjMixture(-1)</script>
+    </binding>
+   </action>
+
+   <action>
+    <name>Increase Throttle</name>
+    <button>0</button>
+     <x>30</x>
+     <y>-36</y>
+     <w>25</w>
+     <h>75</h>
+    <repeatable type="bool">true</repeatable>
+    <binding> 
+     <command>nasal</command>
+     <script>controls.adjThrottle(1)</script>
+    </binding>
+   </action>
+
+   <action>
+    <name>Decrease Throttle</name>
+    <button>0</button>
+     <x>45</x>
+     <y>-111</y>
+     <w>25</w>
+     <h>75</h>
+    <repeatable type="bool">true</repeatable>
+    <binding> 
+     <command>nasal</command>
+     <script>controls.adjThrottle(-1)</script>
+    </binding>
+   </action>
+
+   <action>
+     <name>ParkingBrake</name>
+     <button>0</button>
+     <x>-70</x>
+     <y>-171</y>
+     <w>16</w>
+     <h>50</h>
+     <binding>
+      <command>nasal</command>
+      <script>controls.applyParkingBrake(1)</script>
+     </binding>
+   </action>   
+
+<!-- kt70 Controls -->
+
+    <action>
+      <name>func-L-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>1</interval-sec>
+      <x>340</x>
+      <y>275</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/func-knob</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>func-L-3</name>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <x>340</x>
+      <y>275</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/func-knob</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>func-L-4</name>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <x>340</x>
+      <y>275</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/func-knob</property>
+        <step>1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+
+    <action>
+      <name>func-R-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>1</interval-sec>
+      <x>350</x>
+      <y>275</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/func-knob</property>
+        <step>1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>func-R-3</name>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <x>350</x>
+      <y>275</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/func-knob</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>func-R-4</name>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <x>350</x>
+      <y>275</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/func-knob</property>
+        <step>1</step>
+        <min>0</min>
+        <max>5</max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+
+<!-- Number1 -->
+
+    <action>
+      <name>digit1-L-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>227</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit1</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit1-L-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>227</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit1</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit1-L-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>227</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit1</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+    <action>
+      <name>digit1-R-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>237</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit1</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit1-R-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>237</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit1</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit1-R-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>237</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit1</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+<!-- Number2 -->
+
+    <action>
+      <name>digit2-L-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>257</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit2</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit2-L-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>257</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit2</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit2-L-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>257</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit2</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+    <action>
+      <name>digit2-R-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>267</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit2</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit2-R-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>267</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit2</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit2-R-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>267</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit2</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+<!-- Number3 -->
+
+    <action>
+      <name>digit3-L-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>287</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit3</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit3-L-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>287</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit3</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit3-L-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>287</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit3</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+    <action>
+      <name>digit3-R-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>297</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit3</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit3-R-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>297</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+       <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit3</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit3-R-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>297</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+       <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit3</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+<!-- Number4 -->
+
+    <action>
+      <name>digit4-L-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>317</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+       <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit4</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit4-L-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>317</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+       <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit4</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit4-L-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>317</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+       <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit4</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+    <action>
+      <name>digit4-R-0</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>327</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+       <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit4</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit4-R-3</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>327</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit4</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>digit4-R-4</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <interval-sec>0.5</interval-sec>
+      <x>327</x>
+      <y>259</y>
+      <w>10</w>
+      <h>16</h>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/kt-70/inputs/digit4</property>
+        <step>1</step>
+        <min>0</min>
+        <max>8</max>
+        <wrap>true</wrap>
+      </binding>
+    </action>
+
+<!-- ident -->
+
+    <action>
+      <name>ident-btn</name>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <x>217</x>
+      <y>287</y>
+      <w>10</w>
+      <h>6</h>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/kt-70/inputs/ident-btn</property>
+        <value>true</value>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-assign</command>
+          <property>instrumentation/kt-70/inputs/ident-btn</property>
+          <value>false</value>
+        </binding>
+      </mod-up>
+    </action>
+
+<!-- vfr -->
+
+    <action>
+      <name>vfr-btn</name>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <x>347</x>
+      <y>261.5</y>
+      <w>10</w>
+      <h>6</h>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/kt-70/inputs/digit1</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/kt-70/inputs/digit2</property>
+        <value>2</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/kt-70/inputs/digit3</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>instrumentation/kt-70/inputs/digit4</property>
+        <value>0</value>
+      </binding>
+    </action>
 
   </actions>
 

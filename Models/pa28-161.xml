@@ -4,17 +4,69 @@
 
  <path>pa28-161.ac</path>
 
+    
+ <animation>
+  <type>material</type>
+  <object-name>TakeoffPlacard</object-name>
+  <object-name>LandingPlacard</object-name>
+  <object-name>ManueveringPlacard</object-name>
+  <object-name>CompassLine</object-name>
+  <object-name>ThrottleQuadrant</object-name>
+  <object-name>FuelValvePointer</object-name>
+  <object-name>OFF-Placard</object-name>
+  <object-name>LeftTankPlacard</object-name>
+  <object-name>RightTankPlacard</object-name>
+  <object-name>RudderTrimPlacard</object-name>
+  <object-name>CarbHeatPlacard</object-name>
+  <emission>
+   <red>0.45</red>
+   <green>0.09</green>
+   <blue>0.00001</blue>
+   <factor-prop>/sim/model/material/instruments/factor</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>Prime</object-name>
+  <object-name>Throttle</object-name>
+  <object-name>Mixture</object-name>
+  <object-name>FuelValveFace</object-name>
+  <object-name>CompassCasing</object-name>
+  <object-name>CarbHeatKnob</object-name>
+  <object-name>CH-Lever</object-name>
+  <object-name>RudderTrim</object-name>
+  <object-name>RudderTrimIndicator</object-name>
+  <emission>
+   <red>0.1</red>
+   <green>0.02</green>
+   <blue>0.00001</blue>
+   <factor-prop>/sim/model/material/instruments/factor</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>LandingLight</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>1.0</green>
+   <blue>1.0</blue>
+   <factor-prop>/controls/lighting/landing-lights</factor-prop>
+  </emission>
+ </animation>
+   
 <panel>
   <path>Aircraft/pa28-161/Panel/pa28-panel.xml</path>
   <bottom-left>
     <x-m>1.925</x-m>
     <y-m>-0.530</y-m>
-    <z-m>-0.168</z-m>
+    <z-m>-0.320</z-m>
   </bottom-left>
   <bottom-right>
     <x-m>1.925</x-m>
     <y-m>0.530</y-m>
-    <z-m>-0.168</z-m>
+    <z-m>-0.320</z-m>
   </bottom-right>
   <top-left>
     <x-m>1.925</x-m>
@@ -22,6 +74,124 @@
     <z-m>0.372</z-m>
   </top-left>
 </panel>
+
+<panel>
+  <path>Aircraft/pa28-161/Panel/fuel-panel.xml</path>
+  <bottom-left>
+    <x-m>2.03</x-m>
+    <y-m>-0.56</y-m>
+    <z-m>-0.340</z-m>
+  </bottom-left>
+  <bottom-right>
+    <x-m>1.87</x-m>
+    <y-m>-0.56</y-m>
+    <z-m>-0.34</z-m>
+  </bottom-right>
+  <top-left>
+    <x-m>2.03</x-m>
+    <y-m>-0.58</y-m>
+    <z-m>-0.15</z-m>
+  </top-left>
+</panel>
+
+<panel>
+  <path>Aircraft/pa28-161/Panel/flaps-trim-panel.xml</path>
+  <bottom-left>
+    <x-m>2.4</x-m>
+    <y-m>-0.66</y-m>
+    <z-m>-0.51</z-m>
+  </bottom-left>
+  <bottom-right>
+    <x-m>2.4</x-m>
+    <y-m>0.66</y-m>
+    <z-m>-0.51</z-m>
+  </bottom-right>
+  <top-left>
+    <x-m>1.8</x-m>
+    <y-m>-0.66</y-m>
+    <z-m>-0.51</z-m>
+  </top-left>
+</panel>
+
+ <model>
+  <name>SWITCHES</name>
+  <path>Aircraft/pa28-161/Models/SwitchPanel/switch_panel.xml</path>
+  <offsets>
+   <x-m>1.9312</x-m>
+   <y-m>0.120</y-m>
+   <z-m>0.102</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>PEDALS.L</name>
+  <path>Aircraft/pa28-161/Models/Pedals/Pedals-L.xml</path>
+  <offsets>
+   <x-m>1.65</x-m>
+   <y-m>-0.315</y-m>
+   <z-m>-0.36</z-m>
+  </offsets>
+ </model>   
+
+ <model>
+  <name>PEDALS.R</name>
+  <path>Aircraft/pa28-161/Models/Pedals/Pedals-R.xml</path>
+  <offsets>
+   <x-m>1.65</x-m>
+   <y-m>0.31</y-m>
+   <z-m>-0.36</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>FLAP-TRIM</name>
+  <path>Aircraft/pa28-161/Models/FlapTrim/FlapTrim.xml</path>
+  <offsets>
+   <x-m>2.27</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.36</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/pa28-161/Models/StrobeLight.xml</path>
+  <name>StrobeLight.L</name>
+  <offsets>
+   <x-m>2.68980</x-m>
+   <y-m>-5.18177</y-m>
+   <z-m>0.11596</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <path>Aircraft/pa28-161/Models/StrobeLight.xml</path>
+  <name>StrobeLight.R</name>
+  <offsets>
+   <x-m>2.68980</x-m>
+   <y-m>5.18177</y-m>
+   <z-m>0.11596</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>YokeLeft</name>
+  <path>Aircraft/pa28-161/Models/yoke/yoke-pa28.xml</path>
+  <offsets>
+   <x-m>1.930</x-m>
+   <y-m>-0.235</y-m>
+   <z-m>0.102</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>YokeRight</name>
+  <path>Aircraft/pa28-161/Models/yoke/yoke-pa28.xml</path>
+  <offsets>
+   <x-m>1.930</x-m>
+   <y-m>0.245</y-m>
+   <z-m>0.102</z-m>
+  </offsets>
+ </model>
 
  <model>
   <name>COMP</name>
@@ -37,9 +207,9 @@
   <name>CLOCK</name>
   <path>Aircraft/Instruments-3d/clock/clock.xml</path>
   <offsets>
-   <x-m>1.922</x-m>
-   <y-m>-0.423</y-m>
-   <z-m>0.256</z-m>
+   <x-m>1.925</x-m>
+   <y-m>-0.4235</y-m>
+   <z-m>0.2585</z-m>
   </offsets>
  </model>
 
@@ -48,8 +218,8 @@
   <path>Aircraft/Instruments-3d/asi/asi.xml</path>
   <offsets>
    <x-m>1.925</x-m>
-   <y-m>-0.336</y-m>
-   <z-m>0.268</z-m>
+   <y-m>-0.334</y-m>
+   <z-m>0.271</z-m>
   </offsets>
  </model>
 
@@ -58,8 +228,8 @@
   <path>Aircraft/Instruments-3d/ai/ai.xml</path>
   <offsets>
    <x-m>1.925</x-m>
-   <y-m>-0.232</y-m>
-   <z-m>0.268</z-m>
+   <y-m>-0.233</y-m>
+   <z-m>0.271</z-m>
   </offsets>
  </model>
 
@@ -69,7 +239,7 @@
   <offsets>
    <x-m>1.925</x-m>
    <y-m>-0.126</y-m>
-   <z-m>0.268</z-m>
+   <z-m>0.271</z-m>
   </offsets>
  </model>
 
@@ -78,8 +248,28 @@
   <path>Aircraft/Instruments-3d/vor/vor.xml</path>
   <offsets>
    <x-m>1.925</x-m>
+   <y-m>-0.029</y-m>
+   <z-m>0.271</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>VOR2</name>
+  <path>Aircraft/Instruments-3d/vor/vor2.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
    <y-m>-0.028</y-m>
-   <z-m>0.268</z-m>
+   <z-m>0.183</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Transponder</name>
+  <path>Aircraft/Instruments-3d/kt70/kt70.xml</path>
+  <offsets>
+   <x-m>1.9312</x-m>
+   <y-m>0.292</y-m>
+   <z-m>0.28</z-m>
   </offsets>
  </model>
 
@@ -88,7 +278,7 @@
   <path>Aircraft/Instruments-3d/radio_stack/radio-stack.xml</path>
   <offsets>
    <x-m>1.9312</x-m>
-   <y-m>0.120</y-m>
+   <y-m>0.123</y-m>
    <z-m>0.212</z-m>
   </offsets>
  </model>
@@ -99,8 +289,8 @@
   <path>Aircraft/Instruments-3d/adf/adf.xml</path>
   <offsets>
    <x-m>1.922</x-m>
-   <y-m>-0.433</y-m>
-   <z-m>0.180</z-m>
+   <y-m>-0.434</y-m>
+   <z-m>0.183</z-m>
   </offsets>
  </model>
 
@@ -110,7 +300,7 @@
   <offsets>
    <x-m>1.925</x-m>
    <y-m>-0.336</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.183</z-m>
   </offsets>
  </model>
 
@@ -120,7 +310,7 @@
   <offsets>
    <x-m>1.925</x-m>
    <y-m>-0.232</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.183</z-m>
   </offsets>
  </model>
 
@@ -130,17 +320,7 @@
   <offsets>
    <x-m>1.925</x-m>
    <y-m>-0.126</y-m>
-   <z-m>0.180</z-m>
-  </offsets>
- </model>
-
- <model>
-  <name>VOR2</name>
-  <path>Aircraft/Instruments-3d/vor/vor2.xml</path>
-  <offsets>
-   <x-m>1.925</x-m>
-   <y-m>-0.028</y-m>
-   <z-m>0.180</z-m>
+   <z-m>0.183</z-m>
   </offsets>
  </model>
 
@@ -157,11 +337,11 @@
 
  <model>
   <name>EGT</name>
-  <path>Aircraft/Instruments-3d/egt/egt.xml</path>
+  <path>Aircraft/pa28-161/Models/egt/egt.xml</path>
   <offsets>
    <x-m>1.925</x-m>
-   <y-m>-0.280</y-m>
-   <z-m>0.020</z-m>
+   <y-m>-0.2805</y-m>
+   <z-m>0.0205</z-m>
   </offsets>
  </model>
 
@@ -172,6 +352,56 @@
    <x-m>1.925</x-m>
    <y-m>-0.074</y-m>
    <z-m>0.013</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>AMP</name>
+  <path>Aircraft/pa28-161/Models/AMP/amp.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>0.1785</y-m>
+   <z-m>0.0145</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>VAC</name>
+  <path>Aircraft/Instruments-3d/vac/vac.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>0.437</y-m>
+   <z-m>0.237</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>mags</name>
+  <path>Aircraft/Instruments-3d/magneto-switch/mags.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>-0.225</y-m>
+   <z-m>-0.0055</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>FlightCom</name>
+  <path>Aircraft/pa28-161/Models/FlightCom/flightcom.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>-0.155</y-m>
+   <z-m>0.013</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>HOBBS</name>
+  <path>Aircraft/pa28-161/Models/Hobbs/hobbs.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>0.423</y-m>
+   <z-m>0.178</z-m>
   </offsets>
  </model>
 
@@ -205,19 +435,30 @@
   <object-name>VSI</object-name>
   <object-name>VOR2</object-name>
   <object-name>TACH</object-name>
+  <object-name>FlightCom</object-name>
+  <object-name>VAC</object-name>
+  <object-name>AMP</object-name>
+  <object-name>HOBBS</object-name>
   <object-name>FUEL_OIL</object-name>
+  <object-name>EGT</object-name>
+  <object-name>mags</object-name>
  </animation>
 
  <animation>
   <name>PlacardGroup</name>
   <object-name>TakeoffPlacard</object-name>
+  <object-name>LandingPlacard</object-name>
  </animation>
 
  <animation>
   <name>PanelAlphaOrderGroup</name>
+<!--  <group-name>clicks</group-name>  -->
   <object-name>InstrumentGroup</object-name>
   <object-name>Panel</object-name>
   <object-name>PlacardGroup</object-name>
+  <object-name>LightsGroup</object-name>
+  <object-name>Fuselage</object-name>
+  <object-name>Door</object-name>
  </animation>
 
  <animation>
@@ -247,6 +488,142 @@
    <z>0.0</z>
   </axis>
  </animation>
+
+<!-- Make the fuel selector valve move based on the value of switch-position 
+     The actual change in tank selection is done by pa28.nas which allows
+     cycling the selected tank by keyboard "f".-->
+ <animation>
+  <type>rotate</type>
+  <object-name>FuelValvePointer</object-name>
+  <offset-deg>-180</offset-deg>
+  <factor>-90</factor>
+  <property>controls[1]/fuel/switch-position</property>  
+  <center>
+   <x-m>1.94707</x-m>
+   <y-m>-0.55448</y-m>
+   <z-m>-0.21952</z-m>
+  </center>
+  <axis>
+   <x>0.00042</x>
+   <y>0.01261</y>
+   <z>0.0018</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>ParkingBrakeControl</object-name>
+  <factor>35</factor>
+  <property>controls/gear/brake-parking</property>  
+  <center>
+   <x-m>1.891</x-m>
+   <y-m>-0.0</y-m>
+   <z-m>-0.0616</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>Beacon</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.0</green>
+   <blue>0.0</blue>
+   <factor-prop>/sim/model/lights/beacon/state</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>LeftNavLight</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.0</green>
+   <blue>0.0</blue>
+   <factor-prop>controls/lighting/nav-lights</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>RightNavLight</object-name>
+  <emission>
+   <red>0.0</red>
+   <green>1.0</green>
+   <blue>0.0</blue>
+   <factor-prop>controls/lighting/nav-lights</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Throttle</object-name>
+  <property>controls/engines/engine[0]/throttle</property>
+  <factor>40</factor>
+  <center>
+   <x-m>1.937</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.02758</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Mixture</object-name>
+  <property>controls/engines/engine[0]/mixture</property>
+  <factor>40</factor>
+  <center>
+   <x-m>1.937</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.02758</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>-1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>CarbHeatKnob</object-name>
+  <object-name>CH-Lever</object-name>
+  <property>controls/anti-ice/engine/carb-heat[0]</property>
+  <factor>80</factor>
+  <offset-deg>-40</offset-deg>
+  <center>
+   <x-m>1.9055</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.01017</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+    <animation> 
+      <type>translate</type>
+      <object-name>Prime</object-name>
+      <property>controls/engines/engine/primer-pump</property>
+      <factor>-0.035</factor>
+      <axis> 
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </axis>
+    </animation>
 
  <animation>
   <type>rotate</type>
@@ -388,8 +765,39 @@
  </animation>
 
  <animation>
+  <name>NoseTrim</name>
+  <type>rotate</type>
+  <object-name>RudderTrim</object-name>
+  <property>/controls/flight/rudder-trim[0]</property>
+  <factor>1080</factor>
+  <center>
+   <x-m>1.88419</x-m>
+   <y-m>0.07692</y-m>
+   <z-m>-0.29866</z-m>
+  </center>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+<animation>
+ <type>translate</type>
+  <object-name>RudderTrimIndicator</object-name>
+  <property>/controls/flight/rudder-trim[0]</property>
+  <factor>0.03</factor>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>  
+</animation>
+
+ <animation>
   <type>rotate</type>
   <object-name>Rudder</object-name>
+  <object-name>TailNavLight</object-name>
   <property>surface-positions/rudder-pos-norm</property>
   <factor>17.5</factor>
   <center>
@@ -402,6 +810,17 @@
    <y>0.0</y>
    <z>1.0</z>
   </axis>
+ </animation>
+
+ <animation>
+  <type>material</type>
+  <object-name>TailNavLight</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>1.0</green>
+   <blue>1.0</blue>
+   <factor-prop>controls/lighting/nav-lights</factor-prop>
+  </emission>
  </animation>
 
 </PropertyList>
