@@ -398,6 +398,30 @@
       </click>
       
       <click> 
+        <name>Panel Lights On</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+          <property>controls/switches/panel-lights</property>
+        </condition>
+        <volume> 
+          <factor>1.0</factor>
+        </volume>
+      </click>
+ 
+      <click> 
+        <name>Panel Lights Off</name>
+        <path>Sounds/click.wav</path>
+        <condition>
+         <not>
+           <property>controls/switches/panel-lights</property>
+         </not>
+        </condition>
+        <volume> 
+          <factor>1.0</factor>
+        </volume>
+      </click>
+      
+      <click> 
         <name>Magnetos-off</name>
         <path>Sounds/click.wav</path>
         <condition>
