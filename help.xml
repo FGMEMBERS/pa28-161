@@ -40,11 +40,11 @@
    </key>
    <key>
     <name>(</name>
-    <desc>turn on and/or increase panel lights</desc>
+    <desc>turn on and/or decrease panel lights</desc>
    </key>
    <key>
     <name>9</name>
-    <desc>decrease and/or turn off panel lights</desc>
+    <desc>increase and/or turn off panel lights</desc>
    </key>
    <key>
     <name>h</name>
