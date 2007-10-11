@@ -1,6 +1,6 @@
 fswitch = nil;
 INIT = func {
-    fswitch = props.globals.getNode("/controls[1]/fuel/switch-position");
+    fswitch = props.globals.getNode("/controls/fuel/switch-position");
 }
 
 oatswitch = nil;
@@ -15,10 +15,10 @@ node.setBoolValue(0);
 node = props.globals.getNode("/consumables/fuel/tank[1]/selected",0);
 node.setBoolValue(0);
 
-val = getprop("/controls[1]/fuel/switch-position");
+val = getprop("/controls/fuel/switch-position");
       test = 1 + val;
       if(test > 2){test=0};
-setprop("/controls[1]/fuel/switch-position",test);
+setprop("/controls/fuel/switch-position",test);
 if(test == 1){
 node = props.globals.getNode("/consumables/fuel/tank[0]/selected",0);
 node.setBoolValue(1);
@@ -35,7 +35,7 @@ node.setBoolValue(0);}
  }
 }
 
-setprop("/controls[1]/fuel/switch-position", -1);
+setprop("/controls/fuel/switch-position", -1);
 fuel_switch();
 
 nav_light_switch = func {

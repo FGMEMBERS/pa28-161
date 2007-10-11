@@ -497,7 +497,7 @@
   <object-name>FuelValvePointer</object-name>
   <offset-deg>-180</offset-deg>
   <factor>-90</factor>
-  <property>controls[1]/fuel/switch-position</property>  
+  <property>controls/fuel/switch-position</property>  
   <center>
    <x-m>1.94707</x-m>
    <y-m>-0.55448</y-m>
