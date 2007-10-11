@@ -35,7 +35,6 @@ node.setBoolValue(0);}
  }
 }
 
-setprop("/controls/fuel/switch-position", -1);
 fuel_switch();
 
 nav_light_switch = func {

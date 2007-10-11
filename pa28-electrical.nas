@@ -34,8 +34,6 @@ init_electrical = func {
     battery = BatteryClass.new();
     alternator = AlternatorClass.new();
 
-    setprop("/controls/electric/battery-switch", 0);
-    setprop("/controls/electric/alternator-switch", 0);
     setprop("/controls/electric/engine/generator", 0);
     setprop("/controls/engines/engine[0]/fuel-pump",0);
     setprop("/controls/engines/engine[0]/primer-pump",0);
@@ -142,7 +140,6 @@ AlternatorClass.new = func {
             rpm_threshold : 600.0,
             ideal_volts : 14.0,
             ideal_amps : 50.0 };
-    setprop( obj.rpm_source, 0.0 );
     return obj;
 }
 
