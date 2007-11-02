@@ -43,7 +43,7 @@ init_electrical = func {
     setprop("/controls/switches/panel-lights-factor", 0);    
     setprop("/controls/switches/landing-light", 0);
     setprop("/controls/switches/flashing-beacon",0);
-    setprop("/instrumentation/turn-indicator/serviceable",0);
+    setprop("/instrumentation/turn-indicator/serviceable",1);
     setprop("/controls/switches/pitot-heat", 0);
     setprop("/controls/switches/starter", 0);
     setprop("/controls/switches/strobe-lights", 0);
