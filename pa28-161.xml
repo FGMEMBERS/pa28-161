@@ -13,9 +13,9 @@
 </approach>
 
 <!-- Cruise configuration -->
-<cruise speed="127" alt="7500" fuel="1.0">
+<cruise speed="122" alt="7500" fuel="1.0">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
-  <control-setting axis="/controls/engines/engine[0]/mixture" value="0.7"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="0.6"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
   <solve-weight idx="0" weight="170"/>
   <solve-weight idx="1" weight="170"/>
