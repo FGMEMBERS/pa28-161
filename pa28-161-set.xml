@@ -339,6 +339,7 @@ spinning.
   <pa28>
     <file>Aircraft/pa28-161/Models/pa28.nas</file>
     <file>Aircraft/pa28-161/pa28-electrical.nas</file>
+    <file>Aircraft/pa28-161/action-sim.nas</file>
   </pa28>
   <kap140>
     <file>Aircraft/Generic/kap140.nas</file>

@@ -7,24 +7,16 @@
 # Initialize internal values
 #
 
-battery = nil;
-alternator = nil;
+var battery = nil;
+var alternator = nil;
 
-last_time = 0.0;
+var last_time = 0.0;
 
-vcutoff = 8.0;
-vbus_volts = 0.0;
-ebus1_volts = 0.0;
-ebus2_volts = 0.0;
-
-fuel_pres_ave = 0.0;
-oil_pres_ave = 0.0;
+var vcutoff = 8.0;
+var vbus_volts = 0.0;
+var ebus1_volts = 0.0;
+var ebus2_volts = 0.0;
 ammeter_ave = 0.0;
-egt_ave = 0.0;
-nose_gear_pos_norm = 0.0;
-rudder_position = 0.0;
-C = 0.0;
-egt = 0.0;
 
 ##
 # Initialize the electrical system
@@ -51,8 +43,6 @@ init_electrical = func {
     setprop("/controls/switches/map-lights",0);
     setprop("/controls/switches/cabin-lights",0);
     setprop("/systems/electrical/outputs/starter[0]", 0.0);
-    setprop("/engines/engine/fuel-pressure-psi", 0.0);
-    setprop("/engines/engine/oil-pressure-psi", 0.0);
     setprop("/systems/electrical/amps", 0.0);
     setprop("/systems/electrical/volts", 0.0);
     setprop("/systems/electrical/outputs/cabin-lights", 0.0);
@@ -103,8 +93,8 @@ BatteryClass.new = func {
 
 
 BatteryClass.apply_load = func( amps, dt ) {
-    amphrs_used = amps * dt / 3600.0;
-    percent_used = amphrs_used / me.amp_hours;
+    var amphrs_used = amps * dt / 3600.0;
+    var percent_used = amphrs_used / me.amp_hours;
     me.charge_percent -= percent_used;
     if ( me.charge_percent < 0.0 ) {
         me.charge_percent = 0.0;
@@ -117,17 +107,17 @@ BatteryClass.apply_load = func( amps, dt ) {
 
 
 BatteryClass.get_output_volts = func {
-    x = 1.0 - me.charge_percent;
-    tmp = -(3.0 * x - 1.0);
-    factor = (tmp*tmp*tmp*tmp*tmp + 32) / 32;
+    var x = 1.0 - me.charge_percent;
+    var tmp = -(3.0 * x - 1.0);
+    var factor = (tmp*tmp*tmp*tmp*tmp + 32) / 32;
     return me.ideal_volts * factor;
 }
 
 
 BatteryClass.get_output_amps = func {
-    x = 1.0 - me.charge_percent;
-    tmp = -(3.0 * x - 1.0);
-    factor = (tmp*tmp*tmp*tmp*tmp + 32) / 32;
+    var x = 1.0 - me.charge_percent;
+    var tmp = -(3.0 * x - 1.0);
+    var factor = (tmp*tmp*tmp*tmp*tmp + 32) / 32;
     return me.ideal_amps * factor;
 }
 
@@ -148,13 +138,13 @@ AlternatorClass.apply_load = func( amps, dt ) {
     # Scale alternator output for rpms < 600.  For rpms >= 600
     # give full output.  This is just a WAG, and probably not how
     # it really works but I'm keeping things "simple" to start.
-    rpm = getprop( me.rpm_source );
-    factor = rpm / me.rpm_threshold;
+    var rpm = getprop( me.rpm_source );
+    var factor = rpm / me.rpm_threshold;
     if ( factor > 1.0 ) {
         factor = 1.0;
     }
     # print( "alternator amps = ", me.ideal_amps * factor );
-    available_amps = me.ideal_amps * factor;
+    var available_amps = me.ideal_amps * factor;
     return available_amps - amps;
 }
 
@@ -163,8 +153,8 @@ AlternatorClass.get_output_volts = func {
     # scale alternator output for rpms < 600.  For rpms >= 600
     # give full output.  This is just a WAG, and probably not how
     # it really works but I'm keeping things "simple" to start.
-    rpm = getprop( me.rpm_source );
-    factor = rpm / me.rpm_threshold;
+    var rpm = getprop( me.rpm_source );
+    var factor = rpm / me.rpm_threshold;
     if ( factor > 1.0 ) {
         factor = 1.0;
     }
@@ -177,8 +167,8 @@ AlternatorClass.get_output_amps = func {
     # scale alternator output for rpms < 600.  For rpms >= 600
     # give full output.  This is just a WAG, and probably not how
     # it really works but I'm keeping things "simple" to start.
-    rpm = getprop( me.rpm_source );
-    factor = rpm / me.rpm_threshold;
+    var rpm = getprop( me.rpm_source );
+    var factor = rpm / me.rpm_threshold;
     if ( factor > 1.0 ) {
         factor = 1.0;
     }
@@ -188,8 +178,8 @@ AlternatorClass.get_output_amps = func {
 
 
 update_electrical = func {
-    time = getprop("/sim/time/elapsed-sec");
-    dt = time - last_time;
+    var time = getprop("/sim/time/elapsed-sec");
+    var dt = time - last_time;
     last_time = time;
 
     update_virtual_bus( dt );
@@ -201,24 +191,22 @@ update_electrical = func {
 
 
 update_virtual_bus = func( dt ) {
-    battery_volts = battery.get_output_volts();
-    alternator_volts = alternator.get_output_volts();
-    external_volts = 0.0;
-    load = 0.0;
-    fuel_pres = 0.0;
-    oil_pres = 0.0;
+    var battery_volts = battery.get_output_volts();
+    var alternator_volts = alternator.get_output_volts();
+    var external_volts = 0.0;
+    var load = 0.0;
 
     # switch state
-    master_bat = getprop("/controls/electric/battery-switch");
+    var master_bat = getprop("/controls/electric/battery-switch");
     if ( master_bat ) {
         setprop("/controls/electric/engine/generator",1);
     }
 
-    master_alt = getprop("/controls/electric/alternator-switch");;
+    var master_alt = getprop("/controls/electric/alternator-switch");;
 
     # determine power source
-    bus_volts = 0.0;
-    power_source = nil;
+    var bus_volts = 0.0;
+    var power_source = nil;
     if ( master_bat ) {
         bus_volts = battery_volts;
         power_source = "battery";
@@ -283,63 +271,8 @@ update_virtual_bus = func( dt ) {
     # filter ammeter needle pos
     ammeter_ave = 0.8 * ammeter_ave + 0.2 * ammeter;
 
-##
-#  This is a convenient cludge to model fuel pressure and oil pressure
-##
-    rpm = getprop("/engines/engine/rpm");
-    if (rpm > 600.0) {
-    fuel_pres = 3.2;
-    oil_pres = 41.5;
-    }
-    if (getprop("/controls/engines/engine/fuel-pump")) {
-    fuel_pres += 3.1;
-    }
-    # filter both presures
-    fuel_pres_ave = 0.8 * fuel_pres_ave + 0.2 * fuel_pres;
-    oil_pres_ave = 0.8 * oil_pres_ave + 0.2 * oil_pres;
-# print( " rpm = ", rpm, " fuel pres = ", fuel_pres_ave, " oil pres = ", oil_pres_ave ); 
-
-##
-#  Save a factor used to make the prop disc disapear as rpm increases
-##
-    factor = 1.0 - rpm/2400;
-    if ( factor < 0.0 ) {
-        factor = 0.0;
-    }
-
-##
-#  Stall Warning
-##
-    ias = getprop("/instrumentation/airspeed-indicator/indicated-speed-kt");
-    flaps = getprop("/surface-positions/flap-pos-norm");
-    gforce = getprop("/accelerations/pilot-g");
-#    print("ias = ", ias, "  flaps = ", flaps);
-#  pa28-161 Vs = 50 knots,  warn at 52
-    stall = 50 - 7*flaps + 20*(gforce - 1.0);
-    node = props.globals.getNode("/sim/alarms/stall-warning",1);
-    if ( ias > stall ) {
-      node.setBoolValue(0);
-    }
-    else {
-      node.setBoolValue(1);
-    }
-
-##
-#  Simulate egt from pilot's perspective using fuel flow and rpm
-##
-    fuel_flow = getprop("engines/engine[0]/fuel-flow-gph");
-    egt = 325 - abs(fuel_flow - 10)*20;
-    if (egt < 20) {egt = 20; }
-    egt = egt*(rpm/2400)*(rpm/2400);
-#   Smooth and add some lag
-    egt_ave = 0.995*egt_ave + 0.005*egt;
     # outputs
 
-    setprop("/engines/engine[0]/egt-degf-fix", egt_ave);
-    setprop("/gear/gear[0]/turn-pos-norm", rudder_position);
-    setprop("/sim/models/materials/propdisc/factor", factor);  
-    setprop("/engines/engine/fuel-pressure-psi", fuel_pres_ave);
-    setprop("/engines/engine/oil-pressure-psi", oil_pres_ave);
     setprop("/systems/electrical/amps", ammeter_ave);
     setprop("/systems/electrical/volts", bus_volts);
     vbus_volts = bus_volts;
