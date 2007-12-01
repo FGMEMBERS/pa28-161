@@ -16,7 +16,7 @@ var vcutoff = 8.0;
 var vbus_volts = 0.0;
 var ebus1_volts = 0.0;
 var ebus2_volts = 0.0;
-ammeter_ave = 0.0;
+var ammeter_lowpass = aircraft.lowpass.new(0.5);
 
 ##
 # Initialize the electrical system
@@ -36,7 +36,7 @@ init_electrical = func {
     setprop("/controls/switches/landing-light", 0);
     setprop("/controls/switches/flashing-beacon",0);
     setprop("/instrumentation/turn-indicator/serviceable",1);
-    setprop("/controls/switches/pitot-heat", 0);
+    setprop("/controls/anti-ice/pitot-heat", 0);
     setprop("/controls/switches/starter", 0);
     setprop("/controls/switches/strobe-lights", 0);
 #    setprop("/controls/switches/master-avionics", 0);
@@ -259,7 +259,6 @@ update_virtual_bus = func( dt ) {
             ammeter = battery.charge_amps;
         }
     }
-    # print( "ammeter = ", ammeter );
 
     # charge/discharge the battery
     if ( power_source == "battery" ) {
@@ -268,12 +267,9 @@ update_virtual_bus = func( dt ) {
         battery.apply_load( -battery.charge_amps, dt );
     }
 
-    # filter ammeter needle pos
-    ammeter_ave = 0.8 * ammeter_ave + 0.2 * ammeter;
-
     # outputs
 
-    setprop("/systems/electrical/amps", ammeter_ave);
+    setprop("/systems/electrical/amps", ammeter_lowpass.filter(ammeter));
     setprop("/systems/electrical/volts", bus_volts);
     vbus_volts = bus_volts;
 
