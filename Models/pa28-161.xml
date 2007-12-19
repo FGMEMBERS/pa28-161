@@ -156,6 +156,7 @@
  <model>
   <path>Aircraft/pa28-161/Models/StrobeLight.xml</path>
   <name>StrobeLight.L</name>
+  <nopreview/>
   <offsets>
    <x-m>2.68980</x-m>
    <y-m>-5.18177</y-m>
@@ -166,6 +167,7 @@
  <model>
   <path>Aircraft/pa28-161/Models/StrobeLight.xml</path>
   <name>StrobeLight.R</name>
+  <nopreview/>
   <offsets>
    <x-m>2.68980</x-m>
    <y-m>5.18177</y-m>
