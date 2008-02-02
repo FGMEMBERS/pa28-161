@@ -4,6 +4,25 @@
 
  <path>SwitchPanel.ac</path>
 
+    <panel>
+        <path>Aircraft/pa28-161/Panel/Switch-Panel_Panel.xml</path>
+        <bottom-left>
+            <x-m>0.001</x-m>
+            <y-m>-0.08742</y-m>
+            <z-m>-0.01986</z-m>
+        </bottom-left>
+        <bottom-right>
+            <x-m>0.001</x-m>
+            <y-m>0.08742</y-m>
+            <z-m>-0.01986</z-m>
+        </bottom-right>
+        <top-left>
+            <x-m>0.001</x-m>
+            <y-m>-0.08742</y-m>
+            <z-m>0.01986</z-m>
+        </top-left>
+    </panel>
+
  <animation>
   <type>material</type>
   <object-name>Bezel</object-name>
