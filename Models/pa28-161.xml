@@ -22,7 +22,7 @@
    <red>0.45</red>
    <green>0.09</green>
    <blue>0.00001</blue>
-   <factor-prop>/sim/model/material/instruments/factor</factor-prop>
+   <factor-prop>sim/model/material/instruments/factor</factor-prop>
   </emission>
  </animation>
 
@@ -41,7 +41,7 @@
    <red>0.1</red>
    <green>0.02</green>
    <blue>0.00001</blue>
-   <factor-prop>/sim/model/material/instruments/factor</factor-prop>
+   <factor-prop>sim/model/material/instruments/factor</factor-prop>
   </emission>
  </animation>
 
@@ -52,7 +52,7 @@
    <red>1.0</red>
    <green>1.0</green>
    <blue>1.0</blue>
-   <factor-prop>/controls/lighting/landing-lights</factor-prop>
+   <factor-prop>controls/lighting/landing-lights</factor-prop>
   </emission>
  </animation>
    
@@ -555,7 +555,7 @@
    <red>1.0</red>
    <green>0.0</green>
    <blue>0.0</blue>
-   <factor-prop>/sim/model/lights/beacon/state</factor-prop>
+   <factor-prop>sim/model/lights/beacon/state</factor-prop>
   </emission>
  </animation>
 
@@ -789,7 +789,7 @@
   <name>NoseTrim</name>
   <type>rotate</type>
   <object-name>RudderTrim</object-name>
-  <property>/controls/flight/rudder-trim[0]</property>
+  <property>controls/flight/rudder-trim[0]</property>
   <factor>1080</factor>
   <center>
    <x-m>1.88419</x-m>
@@ -806,7 +806,7 @@
 <animation>
  <type>translate</type>
   <object-name>RudderTrimIndicator</object-name>
-  <property>/controls/flight/rudder-trim[0]</property>
+  <property>controls/flight/rudder-trim[0]</property>
   <factor>0.03</factor>
   <axis>
    <x>1</x>
