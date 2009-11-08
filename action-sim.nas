@@ -97,7 +97,30 @@ var update_actions = func {
     if (egt < 20) {egt = 20; }
     egt = egt*(rpm/2400)*(rpm/2400);
 
+##
+#  Disengage Joystick aileron if autopilot is controlling roll
+##
+
+  if ( getprop("autopilot/KAP140/locks/roll-axis")) { 
+      aileron = getprop("controls/flight/AP_aileron");
+  }
+  else {
+      aileron = getprop("controls/flight/aileron");
+  }
+
+##
+#  Disengage Joystick elevator if autopilot is controlling pitch
+##
+
+  if ( getprop("autopilot/KAP140/locks/pitch-axis")) {
+      elevator = getprop("controls/flight/AP_elevator");
+  }
+  else {
+      elevator = getprop("controls/flight/elevator");
+  }
     # outputs
+    setprop("/controls/flight/aileron_in", aileron);
+    setprop("/controls/flight/elevator_in", elevator);
     setprop("/engines/engine[0]/egt-degf-fix", egt_lowpass.filter(egt));
     setprop("/sim/models/materials/propdisc/factor", factor);  
     setprop("/engines/engine/fuel-pressure-psi", fuel_pres_lowpass.filter(fuel_pres));

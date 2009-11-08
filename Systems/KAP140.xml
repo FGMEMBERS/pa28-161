@@ -149,7 +149,7 @@
       <prop>/autopilot/KAP140/settings/target-turn-rate</prop>
     </reference>
     <output>
-      <prop>/controls/flight/aileron</prop>
+      <prop>/controls/flight/AP_aileron</prop>
     </output>
     <config>
       <Kp>0.15</Kp>        <!-- proportional gain -->
@@ -252,7 +252,7 @@
       <prop>/autopilot/KAP140/settings/target-pressure-rate</prop>
     </reference>
     <output>
-      <prop>/controls/flight/elevator</prop>
+      <prop>/controls/flight/AP_elevator</prop>
     </output>
     <config>
       <Kp>5.0</Kp>      <!-- proportional gain -->
