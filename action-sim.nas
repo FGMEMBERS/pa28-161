@@ -25,6 +25,10 @@ var fuel_pump_volume = nil;
 var fuel_pres_lowpass = aircraft.lowpass.new(0.5);
 var oil_pres_lowpass = aircraft.lowpass.new(0.5);
 var egt_lowpass = aircraft.lowpass.new(0.95);
+var cdi0_lowpass = aircraft.lowpass.new(0.5);
+var cdi1_lowpass = aircraft.lowpass.new(0.5);
+var gs0_lowpass = aircraft.lowpass.new(0.5);
+var gs1_lowpass = aircraft.lowpass.new(0.5);
 
 var init_actions = func {
     setprop("engines/engine[0]/fuel-flow-gph", 0.0);
@@ -32,6 +36,12 @@ var init_actions = func {
     setprop("/instrumentation/airspeed-indicator/indicated-speed-kt", 0.0);
     setprop("/instrumentation/airspeed-indicator/pressure-alt-offset-deg", 0.0);
     setprop("/accelerations/pilot-g", 1.0);
+    setprop("/controls/flight/aileron_in", 0.0);
+    setprop("/controls/flight/elevator_in", 0.0);
+    setprop("/instrumentation/nav[0]/filtered-cdiNAV0-deflection", 0.0);
+    setprop("/instrumentation/nav[1]/filtered-cdiNAV1-deflection", 0.0);
+    setprop("/instrumentation/nav[0]/filtered-gsNAV0-deflection", 0.0);
+    setprop("/instrumentation/nav[1]/filtered-gsNAV1-deflection", 0.0);
 
     # Request that the update fuction be called next frame
     settimer(update_actions, 0);
@@ -118,9 +128,19 @@ var update_actions = func {
   else {
       elevator = getprop("controls/flight/elevator");
   }
+
+  var cdiNAV0 = getprop("/instrumentation/nav[0]/heading-needle-deflection");
+  var cdiNAV1 = getprop("/instrumentation/nav[1]/heading-needle-deflection");
+  var gsNAV0  = getprop("/instrumentation/nav[0]/gs-needle-deflection-norm");
+  var gsNAV1  = getprop("/instrumentation/nav[1]/gs-needle-deflection-norm");
+
     # outputs
     setprop("/controls/flight/aileron_in", aileron);
     setprop("/controls/flight/elevator_in", elevator);
+    setprop("/instrumentation/nav[0]/filtered-cdiNAV0-deflection", cdi0_lowpass.filter(cdiNAV0));
+    setprop("/instrumentation/nav[1]/filtered-cdiNAV1-deflection", cdi1_lowpass.filter(cdiNAV1));
+    setprop("/instrumentation/nav[0]/filtered-gsNAV0-deflection", gs0_lowpass.filter(gsNAV0));
+    setprop("/instrumentation/nav[1]/filtered-gsNAV1-deflection", gs1_lowpass.filter(gsNAV1));
     setprop("/engines/engine[0]/egt-degf-fix", egt_lowpass.filter(egt));
     setprop("/sim/models/materials/propdisc/factor", factor);  
     setprop("/engines/engine/fuel-pressure-psi", fuel_pres_lowpass.filter(fuel_pres));
