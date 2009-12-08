@@ -9,6 +9,7 @@
   <type>material</type>
   <object-name>TakeoffPlacard</object-name>
   <object-name>LandingPlacard</object-name>
+  <object-name>AC_Num</object-name>
   <object-name>ManueveringPlacard</object-name>
   <object-name>CompassLine</object-name>
   <object-name>ThrottleQuadrant</object-name>
@@ -284,26 +285,6 @@
   </offsets>
  </model>
 
- <model>
-  <name>Transponder</name>
-  <path>Aircraft/Instruments-3d/kt70/kt70.xml</path>
-  <offsets>
-   <x-m>1.9312</x-m>
-   <y-m>0.292</y-m>
-   <z-m>0.28</z-m>
-  </offsets>
- </model>
-
- <model>
-  <name>RadioStack</name>
-  <path>Aircraft/Instruments-3d/radio_stack/radio-stack.xml</path>
-  <offsets>
-   <x-m>1.9312</x-m>
-   <y-m>0.123</y-m>
-   <z-m>0.212</z-m>
-  </offsets>
- </model>
-
  <!-- FIXME: set back for now -->
  <model>
   <name>ADF</name>
@@ -426,16 +407,76 @@
   </offsets>
  </model>
 
-<!--
+ <!--   Radio Stack  -->
+
  <model>
-  <path>Aircraft/Instruments-3d/kx170b/kx170b.xml</path>
+  <path>Aircraft/pa28-161/Models/MarkerBeacon/MkrBcn.xml</path>
   <offsets>
-   <x-m>1.93</x-m>
-   <y-m>0.12</y-m>
-   <z-m>0.220</z-m>
+   <x-m>1.925</x-m>
+   <y-m>-0.05223</y-m>
+   <z-m>0.32864</z-m>
   </offsets>
  </model>
--->
+
+ <model>
+  <name>kx165-1</name>
+  <path>Aircraft/pa28-161/Models/radio_stack/kx165-1.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>0.123</y-m>
+   <z-m>0.32</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>kx165-2</name>
+  <path>Aircraft/pa28-161/Models/radio_stack/kx165-2.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>0.123</y-m>
+   <z-m>0.265</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>dme</name>
+  <path>Aircraft/pa28-161/Models/radio_stack/dme.xml</path>
+  <offsets>
+   <x-m>1.9312</x-m>
+   <y-m>0.123</y-m>
+   <z-m>0.213</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>KAP140</name>
+  <path>Aircraft/pa28-161/Models/radio_stack/kap140/KAP140TwoAxisAlt.xml</path>
+  <offsets>
+   <x-m>1.9312</x-m>
+   <y-m>0.123</y-m>
+   <z-m>0.173</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Transponder</name>
+  <path>Aircraft/Instruments-3d/kt70/kt70.xml</path>
+  <offsets>
+   <x-m>1.9312</x-m>
+   <y-m>0.292</y-m>
+   <z-m>0.28</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>kr87</name>
+  <path>Aircraft/pa28-161/Models/radio_stack/kr87-adf/kr87.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>0.292</y-m>
+   <z-m>0.24</z-m>
+  </offsets>
+ </model>
 
  <!-- Visible up to 10km (6mi) -->
  <animation>
@@ -585,7 +626,7 @@
   <type>rotate</type>
   <object-name>Throttle</object-name>
   <property>controls/engines/engine[0]/throttle</property>
-  <factor>40</factor>
+  <factor>47</factor>
   <center>
    <x-m>1.937</x-m>
    <y-m>0.0</y-m>
@@ -602,7 +643,7 @@
   <type>rotate</type>
   <object-name>Mixture</object-name>
   <property>controls/engines/engine[0]/mixture</property>
-  <factor>40</factor>
+  <factor>47</factor>
   <center>
    <x-m>1.937</x-m>
    <y-m>0.0</y-m>

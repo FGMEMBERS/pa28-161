@@ -43,6 +43,9 @@ var init_actions = func {
     setprop("/instrumentation/nav[0]/filtered-gsNAV0-deflection", 0.0);
     setprop("/instrumentation/nav[1]/filtered-gsNAV1-deflection", 0.0);
 
+    # Make sure that init_actions is called when the sim is reset
+    setlistener("sim/signals/reset", init_actions); 
+
     # Request that the update fuction be called next frame
     settimer(update_actions, 0);
 }
