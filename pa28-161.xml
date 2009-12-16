@@ -77,18 +77,18 @@
   <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
 </propeller>
 
-<gear x="-1" y="0" z="-1.3" compression=".05"> <!-- nose -->
+<gear x="-1.05849" y="0" z="-1.07295" compression=".15"> <!-- nose -->
   <control-input axis="/controls/flight/rudder" control="STEER"
                  src0="-1.0" src1="1.0"
                  dst0="-0.1" dst1="0.1"/>
 </gear>
 
-<gear x="-2.8" y="1.5" z="-1.3" compression=".05"> <!-- left main -->
+<gear x="-2.77504" y="1.5" z="-1.06979" compression=".15"> <!-- left main -->
   <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
 </gear>
 
-<gear x="-2.8" y="-1.5" z="-1.3" compression=".05"> <!-- left main -->
+<gear x="-2.77504" y="-1.5" z="-1.06979" compression=".15"> <!-- left main -->
   <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
   <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
 </gear>

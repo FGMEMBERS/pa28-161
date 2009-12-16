@@ -29,8 +29,13 @@ var cdi0_lowpass = aircraft.lowpass.new(0.5);
 var cdi1_lowpass = aircraft.lowpass.new(0.5);
 var gs0_lowpass = aircraft.lowpass.new(0.5);
 var gs1_lowpass = aircraft.lowpass.new(0.5);
+var propGear0 = props.globals.getNode("gear/gear[0]", 1);
+var theta0N = propGear0.getNode("theta0", 1);
+var gear0Compression = propGear0.getNode("compression-m", 1);
 
 var init_actions = func {
+    theta0N.setDoubleValue(0.0);
+    gear0Compression.setDoubleValue(0.0);
     setprop("engines/engine[0]/fuel-flow-gph", 0.0);
     setprop("/surface-positions/flap-pos-norm", 0.0);
     setprop("/instrumentation/airspeed-indicator/indicated-speed-kt", 0.0);
@@ -111,6 +116,21 @@ var update_actions = func {
     egt = egt*(rpm/2400)*(rpm/2400);
 
 ##
+#  Compute the scissor link angles due to nose strut compression
+##
+
+    var theta0 = 0.0;
+    # Compute the angle the nose gear scissor rotates due to nose gear strut compression
+
+    H = 0.099543;  # Nose gear oleo strut extended length in m
+    L = 0.060553;  # Nose gear scissor length in m
+    phi = 0.964830;
+    C = gear0Compression.getValue();
+    if (C > 0.0) {
+      theta0 = scissor_angle(H,C,L,phi);
+    }
+
+##
 #  Disengage Joystick aileron if autopilot is controlling roll
 ##
 
@@ -138,6 +158,7 @@ var update_actions = func {
   var gsNAV1  = getprop("/instrumentation/nav[1]/gs-needle-deflection-norm");
 
     # outputs
+    theta0N.setDoubleValue(theta0);
     setprop("/controls/flight/aileron_in", aileron);
     setprop("/controls/flight/elevator_in", elevator);
     setprop("/instrumentation/nav[0]/filtered-cdiNAV0-deflection", cdi0_lowpass.filter(cdiNAV0));
@@ -151,6 +172,14 @@ var update_actions = func {
     setprop("/sim/sound/fuel_pump_volume", fuel_pump_volume);
 
     settimer(update_actions, 0);
+}
+
+var scissor_angle = func(H,C,L,phi) {
+    var a = (H - C)/2/L;
+    # Use 2 iterates of Newton's method and 4th order Taylor series to 
+    # approximate theta where sin(phi - theta) = a
+    var theta = phi - 2*a/3 - a/3/(1-a*a/2);
+    return theta;
 }
 
 # Setup listener call to start update loop once the fdm is initialized

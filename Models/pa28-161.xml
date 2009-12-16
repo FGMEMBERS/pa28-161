@@ -29,7 +29,7 @@
 
  <animation>
   <type>material</type>
-  <object-name>Prime</object-name>
+  <object-name>PrimeFace</object-name>
   <object-name>Throttle</object-name>
   <object-name>Mixture</object-name>
   <object-name>FuelValveFace</object-name>
@@ -344,6 +344,16 @@
    <x-m>1.925</x-m>
    <y-m>-0.2805</y-m>
    <z-m>0.0205</z-m>
+  </offsets>
+ </model>
+
+ <model>
+  <name>Primer</name>
+  <path>Aircraft/pa28-161/Models/PrimerPump/primer.xml</path>
+  <offsets>
+   <x-m>1.925</x-m>
+   <y-m>-0.01435</y-m>
+   <z-m>0.01567</z-m>
   </offsets>
  </model>
 
@@ -675,18 +685,6 @@
   </axis>
  </animation>
 
-    <animation> 
-      <type>translate</type>
-      <object-name>Prime</object-name>
-      <property>controls/engines/engine/primer-pump</property>
-      <factor>-0.035</factor>
-      <axis> 
-        <x>-1</x>
-        <y>0</y>
-        <z>0</z>
-      </axis>
-    </animation>
-
  <animation>
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
@@ -810,15 +808,98 @@
  <animation>
   <type>rotate</type>
   <object-name>NoseWheel</object-name>
+  <object-name>NoseOleo</object-name>
+  <object-name>NoseOleoMount</object-name>
+  <object-name>UpperLink</object-name>
+  <object-name>LowerLink</object-name>
+  <object-name>NoseStrutLinkMount</object-name>
+  <object-name>NoseFork</object-name>
   <object-name>NoseWheelFairing</object-name>
   <object-name>NoseWheelStrut</object-name>
   <property>surface-positions/rudder-pos-norm</property>
   <factor>-17.5</factor>
   <center>
-   <x-m>1.04</x-m>
+   <x-m>1.07906</x-m>
    <y-m>0.0</y-m>
-   <z-m>-0.47</z-m>
+   <z-m>-0.-0.61773</z-m>
   </center>
+  <axis>
+   <x>-0.100868</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>NoseWheel</object-name>
+  <object-name>NoseWheelStrut</object-name>
+  <object-name>LowerLink</object-name>
+  <object-name>NoseStrutLinkMount</object-name>
+  <object-name>NoseFork</object-name>
+  <object-name>NoseWheelFairing</object-name>
+  <property>gear/gear[0]/compression-m</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>-0.100868</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>UpperLink</object-name>
+  <property>gear/gear[0]/theta0</property>
+  <factor>57.3</factor>
+  <center>
+   <x-m>1.11548</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.61490</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LowerLink</object-name>
+  <property>gear/gear[0]/theta0</property>
+  <factor>-57.3</factor>
+  <center>
+   <x-m>1.10549</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.71349</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>LeftWheel</object-name>
+  <object-name>LeftMainFairing</object-name>
+  <property>gear/gear[1]/compression-m</property>
+  <factor>1.0</factor>
+  <axis>
+   <x>0.0</x>
+   <y>0.0</y>
+   <z>1.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>RightWheel</object-name>
+  <object-name>RightMainFairing</object-name>
+  <property>gear/gear[2]/compression-m</property>
+  <factor>1.0</factor>
   <axis>
    <x>0.0</x>
    <y>0.0</y>

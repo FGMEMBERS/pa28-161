@@ -469,19 +469,6 @@
    </action>   
 
    <action>
-     <name>primer</name>
-     <button>0</button>
-     <x>-16</x>
-     <y>-44</y>
-     <w>16</w>
-     <h>25</h>
-     <binding>
-   <command>nasal</command>
-   <script>pa28.primer()</script>
-     </binding>
-   </action>   
-
-   <action>
      <name>ParkingBrake</name>
      <button>0</button>
      <x>-70</x>
