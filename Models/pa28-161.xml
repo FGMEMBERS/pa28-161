@@ -517,23 +517,6 @@
  </animation>
 
  <animation>
-  <name>PlacardGroup</name>
-  <object-name>TakeoffPlacard</object-name>
-  <object-name>LandingPlacard</object-name>
- </animation>
-
- <animation>
-  <name>PanelAlphaOrderGroup</name>
-<!--  <group-name>clicks</group-name>  -->
-  <object-name>InstrumentGroup</object-name>
-  <object-name>Panel</object-name>
-  <object-name>PlacardGroup</object-name>
-  <object-name>LightsGroup</object-name>
-  <object-name>Fuselage</object-name>
-  <object-name>Door</object-name>
- </animation>
-
- <animation>
   <type>select</type>
   <object-name>Propeller</object-name>
   <condition>
@@ -632,6 +615,101 @@
   </emission>
  </animation>
 
+<!--pick animation for the door--> 
+ <animation>
+   <type>pick</type>
+   <object-name>DoorLatch</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>pa28.rightDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+ <animation>
+   <type>pick</type>
+   <object-name>DoorLatchExt</object-name>
+   <visible>true</visible>
+   <action>
+     <button>0</button>
+     <repeatable>false</repeatable>
+     <binding>
+        <command>nasal</command>
+        <script>pa28.rightDoor.toggle();</script>
+     </binding>
+   </action>
+ </animation>
+
+<!--door animation--> 
+ <animation> 
+   <type>rotate</type>
+   <object-name>DoorGroup</object-name>
+   <property>sim/model/door-positions/rightDoor/position-norm</property>
+   <interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.5</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>70.0</dep>
+     </entry>
+   </interpolation>
+
+   <center>
+     <x-m>2.00932</x-m>
+     <y-m>0.60223</y-m>
+     <z-m>-0.02615</z-m>
+   </center>
+
+   <axis>
+     <x1-m>2.00903</x1-m>
+     <y1-m>0.60171</y1-m>
+     <z1-m>-0.02434</z1-m>
+     <x2-m>2.00314</x2-m>
+     <y2-m>0.56534</y2-m>
+     <z2-m>0.21937</z2-m>
+   </axis>
+ </animation>
+
+ <animation>
+   <type>rotate</type>
+   <object-name>DoorLatch</object-name>
+   <property>/sim/model/door-positions/rightDoor/position-norm</property>
+   <interpolation>
+     <entry>
+       <ind>0.0</ind>
+       <dep>0.0</dep>
+     </entry>
+     <entry>
+       <ind>0.5</ind>
+       <dep>60.0</dep>
+     </entry>
+     <entry>
+       <ind>1</ind>
+       <dep>60.0</dep>
+     </entry>
+   </interpolation>
+   <center>
+     <x-m>2.24482</x-m>
+     <y-m>0.5798</y-m>
+     <z-m>0.06912</z-m>
+   </center>
+   <axis>
+     <x>0.0</x>
+     <y>1.0</y>
+     <z>0.1</z>
+   </axis>
+ </animation>
+  
  <animation>
   <type>rotate</type>
   <object-name>Throttle</object-name>
