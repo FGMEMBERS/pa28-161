@@ -143,6 +143,28 @@ spinning.
  <!-- Add a bit of fixed aileron trim to help fly level -->
  <!-- Parking Brake set -->
 
+ <gear>
+  <gear n="0">
+   <position-norm type="double">1</position-norm>
+   <tyre-smoke type="int">0</tyre-smoke>
+   <sprayspeed-ms type="double">0</sprayspeed-ms>
+   <spray-density type="double">0</spray-density>
+   <caster-angle-deg-damped type="double">0</caster-angle-deg-damped>
+  </gear>
+  <gear n="1">
+   <position-norm type="double">1</position-norm>
+   <tyre-smoke type="int">0</tyre-smoke>
+   <sprayspeed-ms type="double">0</sprayspeed-ms>
+   <spray-density type="double">0</spray-density>
+  </gear>
+  <gear n="2">
+   <position-norm type="double">1</position-norm>
+   <tyre-smoke type="int">0</tyre-smoke>
+   <sprayspeed-ms type="double">0</sprayspeed-ms>
+   <spray-density type="double">0</spray-density>
+  </gear>
+ </gear>
+
  <controls>
   <electric>
    <battery-switch type="bool">true</battery-switch>
@@ -337,17 +359,20 @@ spinning.
 <nasal>
 
   <pa28>
-    <file>Aircraft/pa28-161/Models/pa28.nas</file>
-    <file>Aircraft/pa28-161/pa28-electrical.nas</file>
-    <file>Aircraft/pa28-161/action-sim.nas</file>
-    <file>Aircraft/pa28-161/doors.nas</file>
-    <file>Aircraft/pa28-161/kr87.nas</file>
-    <file>Aircraft/pa28-161/Models/radio_stack/ki266.nas</file>
+    <file>Aircraft/pa28-161/Nasal/pa28.nas</file>
+    <file>Aircraft/pa28-161/Nasal/pa28-electrical.nas</file>
+    <file>Aircraft/pa28-161/Nasal/action-sim.nas</file>
+    <file>Aircraft/pa28-161/Nasal/doors.nas</file>
+    <file>Aircraft/pa28-161/Nasal/kr87.nas</file>
+    <file>Aircraft/pa28-161/Nasal/ki266.nas</file>
     <script><![CDATA[ki266.new(0);]]></script>
   </pa28>
   <kap140>
     <file>Aircraft/Generic/kap140.nas</file>
   </kap140>
+  <tyresmoke>
+    <file>Aircraft/pa28-161/Nasal/tyresmoke.nas</file>
+  </tyresmoke>
 
 </nasal>
 

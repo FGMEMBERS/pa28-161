@@ -488,6 +488,36 @@
   </offsets>
  </model>
 
+  <model>
+    <path>Aircraft/Generic/Effects/tyre-smoke-nose.xml</path>
+    <name>tyre-smoke-n</name>
+    <offsets>
+      <x-m>1.062446</x-m>
+      <y-m>0</y-m>
+      <z-m>-1.075437</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Generic/Effects/tyre-smoke-port.xml</path>
+    <name>tyre-smoke-p</name>
+    <offsets>
+      <x-m>2.851301</x-m>
+      <y-m>-1.443750</y-m>
+      <z-m>-1.075437</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Generic/Effects/tyre-smoke-stbd.xml</path>
+    <name>tyre-smoke-s</name>
+    <offsets>
+      <x-m>2.851301</x-m>
+      <y-m>1.443750</y-m>
+      <z-m>-1.075437</z-m>
+    </offsets>
+  </model>
+
  <!-- Visible up to 10km (6mi) -->
  <animation>
   <type>range</type>
