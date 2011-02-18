@@ -1,7 +1,6 @@
 ##
 #  action-sim.nas   Updates various simulated features including:
-#                    egt, fuel pressure, oil pressure, prop visibility, 
-#                    stall warning, etc. every frame
+#                    egt, fuel pressure, oil pressure, stall warning, etc. every frame
 ##
 
 #   Initialize local variables
@@ -25,17 +24,8 @@ var fuel_pump_volume = nil;
 var fuel_pres_lowpass = aircraft.lowpass.new(0.5);
 var oil_pres_lowpass = aircraft.lowpass.new(0.5);
 var egt_lowpass = aircraft.lowpass.new(0.95);
-var cdi0_lowpass = aircraft.lowpass.new(0.5);
-var cdi1_lowpass = aircraft.lowpass.new(0.5);
-var gs0_lowpass = aircraft.lowpass.new(0.5);
-var gs1_lowpass = aircraft.lowpass.new(0.5);
-var propGear0 = props.globals.getNode("gear/gear[0]", 1);
-var theta0N = propGear0.getNode("theta0", 1);
-var gear0Compression = propGear0.getNode("compression-m", 1);
 
 var init_actions = func {
-    theta0N.setDoubleValue(0.0);
-    gear0Compression.setDoubleValue(0.0);
     setprop("engines/engine[0]/fuel-flow-gph", 0.0);
     setprop("/surface-positions/flap-pos-norm", 0.0);
     setprop("/instrumentation/airspeed-indicator/indicated-speed-kt", 0.0);
@@ -43,10 +33,7 @@ var init_actions = func {
     setprop("/accelerations/pilot-g", 1.0);
     setprop("/controls/flight/aileron_in", 0.0);
     setprop("/controls/flight/elevator_in", 0.0);
-    setprop("/instrumentation/nav[0]/filtered-cdiNAV0-deflection", 0.0);
-    setprop("/instrumentation/nav[1]/filtered-cdiNAV1-deflection", 0.0);
-    setprop("/instrumentation/nav[0]/filtered-gsNAV0-deflection", 0.0);
-    setprop("/instrumentation/nav[1]/filtered-gsNAV1-deflection", 0.0);
+    setprop("/sim/model/material/LandingLight/factorAGL", 0.0);  
 
     # Make sure that init_actions is called when the sim is reset
     setlistener("sim/signals/reset", init_actions); 
@@ -83,14 +70,6 @@ var update_actions = func {
    }
 
 ##
-#  Save a factor used to make the prop disc disapear as rpm increases
-##
-    factor = 1.0 - rpm/2400;
-    if ( factor < 0.0 ) {
-        factor = 0.0;
-    }
-
-##
 #  Stall Warning
 ##
     ias = getprop("/instrumentation/airspeed-indicator/indicated-speed-kt");
@@ -116,18 +95,14 @@ var update_actions = func {
     egt = egt*(rpm/2400)*(rpm/2400);
 
 ##
-#  Compute the scissor link angles due to nose strut compression
+#  Simulate landing light ground illumination fall-off with increased agl distance
 ##
-
-    var theta0 = 0.0;
-    # Compute the angle the nose gear scissor rotates due to nose gear strut compression
-
-    H = 0.099543;  # Nose gear oleo strut extended length in m
-    L = 0.060553;  # Nose gear scissor length in m
-    phi = 0.964830;
-    C = gear0Compression.getValue();
-    if (C > 0.0) {
-      theta0 = scissor_angle(H,C,L,phi);
+    var factor = getprop("sim/model/material/LandingLight/factor");
+    var agl = getprop("position/gear-agl-ft");
+    var aglFactor = 5625/(agl*agl);
+    var factorAGL = factor;
+    if (agl > 75) { 
+       factorAGL = factor*aglFactor;
     }
 
 ##
@@ -152,34 +127,16 @@ var update_actions = func {
       elevator = getprop("controls/flight/elevator");
   }
 
-  var cdiNAV0 = getprop("/instrumentation/nav[0]/heading-needle-deflection");
-  var cdiNAV1 = getprop("/instrumentation/nav[1]/heading-needle-deflection");
-  var gsNAV0  = getprop("/instrumentation/nav[0]/gs-needle-deflection-norm");
-  var gsNAV1  = getprop("/instrumentation/nav[1]/gs-needle-deflection-norm");
-
     # outputs
-    theta0N.setDoubleValue(theta0);
     setprop("/controls/flight/aileron_in", aileron);
     setprop("/controls/flight/elevator_in", elevator);
-    setprop("/instrumentation/nav[0]/filtered-cdiNAV0-deflection", cdi0_lowpass.filter(cdiNAV0));
-    setprop("/instrumentation/nav[1]/filtered-cdiNAV1-deflection", cdi1_lowpass.filter(cdiNAV1));
-    setprop("/instrumentation/nav[0]/filtered-gsNAV0-deflection", gs0_lowpass.filter(gsNAV0));
-    setprop("/instrumentation/nav[1]/filtered-gsNAV1-deflection", gs1_lowpass.filter(gsNAV1));
     setprop("/engines/engine[0]/egt-degf-fix", egt_lowpass.filter(egt));
-    setprop("/sim/models/materials/propdisc/factor", factor);  
+    setprop("/sim/model/material/LandingLight/factorAGL", factorAGL);  
     setprop("/engines/engine/fuel-pressure-psi", fuel_pres_lowpass.filter(fuel_pres));
     setprop("/engines/engine/oil-pressure-psi", oil_pres_lowpass.filter(oil_pres));
     setprop("/sim/sound/fuel_pump_volume", fuel_pump_volume);
 
     settimer(update_actions, 0);
-}
-
-var scissor_angle = func(H,C,L,phi) {
-    var a = (H - C)/2/L;
-    # Use 2 iterates of Newton's method and 4th order Taylor series to 
-    # approximate theta where sin(phi - theta) = a
-    var theta = phi - 2*a/3 - a/3/(1-a*a/2);
-    return theta;
 }
 
 # Setup listener call to start update loop once the fdm is initialized

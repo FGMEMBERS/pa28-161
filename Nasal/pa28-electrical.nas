@@ -324,17 +324,20 @@ electrical_bus_1 = func() {
 
     # Landing Light Power
     if ( getprop("controls/switches/landing-light") ) {
-        setprop("systems/electrical/outputs/landing-light", bus_volts);
+        var ldgLightVolts = bus_volts;
     } else {
-        setprop("systems/electrical/outputs/landing-light", 0.0 );
+        ldgLightVolts = 0.0;
     }
-    if ( getprop("systems/electrical/outputs/landing-light") > vcutoff)
+    setprop("systems/electrical/outputs/landing-light", ldgLightVolts );
+
+    if ( ldgLightVolts > vcutoff)
     {
         setprop("controls/lighting/landing-lights", 1);
         load += 3.2;
     } else {
         setprop("controls/lighting/landing-lights", 0);
     }
+    setprop("sim/model/material/LandingLight/factor", ldgLightVolts/14);  
 
     # Fin Strobe Power
     if ( getprop("controls/switches/flashing-beacon") ) {

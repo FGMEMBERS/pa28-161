@@ -34,10 +34,18 @@ spinning.
 
   <systems>
    <autopilot>
-    <path>Aircraft/pa28-161/Systems/KAP140.xml</path>
+     <name>autopilot helpers</name>
+     <path>Aircraft/Generic/generic-autopilot-helper.xml</path>
+   </autopilot>
+   <autopilot>
+     <path>Aircraft/pa28-161/Systems/KAP140.xml</path>
+   </autopilot>
+   <autopilot>
+     <name>FiltersOnly</name>
+     <path>Aircraft/c172p/Systems/NAVandGSfilters.xml</path>
    </autopilot>
    <electrical>
-    <path></path>
+     <path></path>
    </electrical>
   </systems>
 

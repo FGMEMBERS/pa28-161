@@ -48,7 +48,7 @@
 
  <animation>
   <type>material</type>
-  <object-name>LandingLight</object-name>
+  <object-name>LandingLightBulb</object-name>
   <emission>
    <red>1.0</red>
    <green>1.0</green>
@@ -518,6 +518,17 @@
     </offsets>
   </model>
 
+<!-- Landing Light -->
+ <model>
+  <name>LandingLight</name>
+  <path>Aircraft/pa28-161/Models/LandingLight/LandingLight.xml</path>
+  <offsets>
+   <x-m>0.53</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.235</z-m>
+  </offsets>
+ </model>
+
  <!-- Visible up to 10km (6mi) -->
  <animation>
   <type>range</type>
@@ -958,8 +969,7 @@
  <animation>
   <type>rotate</type>
   <object-name>UpperLink</object-name>
-  <property>gear/gear[0]/theta0</property>
-  <factor>57.3</factor>
+  <property>gear/gear[0]/compression-norm</property>
   <center>
    <x-m>1.11548</x-m>
    <y-m>0.0</y-m>
@@ -970,13 +980,13 @@
    <y>-1</y>
    <z>0</z>
   </axis>
+  <interpolation include="NoseGearScissorInterpolation.xml"/>
  </animation>
 
  <animation>
   <type>rotate</type>
   <object-name>LowerLink</object-name>
-  <property>gear/gear[0]/theta0</property>
-  <factor>-57.3</factor>
+  <property>gear/gear[0]/compression-norm</property>
   <center>
    <x-m>1.10549</x-m>
    <y-m>0.0</y-m>
@@ -984,9 +994,10 @@
   </center>
   <axis>
    <x>0</x>
-   <y>-1</y>
+   <y>1</y>
    <z>0</z>
   </axis>
+  <interpolation include="NoseGearScissorInterpolation.xml"/>
  </animation>
 
  <animation>
