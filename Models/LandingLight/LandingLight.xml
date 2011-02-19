@@ -82,7 +82,7 @@
 	<property>orientation/pitch-deg</property>
 	<factor>-1</factor>
 	<center>
-	   <x-m>-10.0</x-m>
+	   <x-m>-10.391</x-m>
 	   <y-m>0.0</y-m>
 	   <z-m>-0.750</z-m>
 	</center>
@@ -114,28 +114,23 @@
 	<type>translate</type>
 	<object-name>landing_light_spot</object-name>
 	<property>position/altitude-agl-ft</property>
-	<factor>0.5</factor>
+	<factor>1.0</factor>
 	<axis>
 	  <x>-1.0</x>
 	  <y>0.0</y>
 	  <z>-0.088</z>
 	</axis>
-        <offset>
-	   <x-m> 0.0 </x-m>
-	   <y-m> 0.0 </y-m>
-	   <z-m> 0.850 </z-m>
-	</offset>
    </animation>
 
    <animation>
 	<type>translate</type>
 	<object-name>landing_light_spot</object-name>
 	<property>orientation/pitch-deg</property>
-	<factor>1</factor>
+	<factor>1.0</factor>
 	<axis>
 	   <x>-1.0</x>
 	   <y>0.0</y>
-	   <z>0.0</z>
+	   <z>-0.088</z>
 	</axis>
    </animation>
 
@@ -149,11 +144,11 @@
             </entry>
             <entry>
                 <ind>20</ind>
-                <dep>2</dep>
+                <dep>1</dep>
             </entry>
             <entry>
                 <ind>1500</ind>
-                <dep>20</dep>
+                <dep>10</dep>
             </entry>
         </interpolation>
     </animation>

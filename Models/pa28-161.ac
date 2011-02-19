@@ -21572,7 +21572,7 @@ name "LightsGroup"
 loc 2.89912 0.134055 1.66848
 kids 6
 OBJECT poly
-name "LandingLight"
+name "LandingLightBulb"
 loc -2.55452 -0.448089 -0.969379
 crease 45.000000
 numvert 129

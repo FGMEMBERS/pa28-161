@@ -99,9 +99,9 @@ var update_actions = func {
 ##
     var factor = getprop("sim/model/material/LandingLight/factor");
     var agl = getprop("position/gear-agl-ft");
-    var aglFactor = 5625/(agl*agl);
+    var aglFactor = 10000/(agl*agl);
     var factorAGL = factor;
-    if (agl > 75) { 
+    if (agl > 100) { 
        factorAGL = factor*aglFactor;
     }
 
