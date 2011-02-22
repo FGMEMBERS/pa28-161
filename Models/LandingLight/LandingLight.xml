@@ -113,7 +113,7 @@
    <animation>
 	<type>translate</type>
 	<object-name>landing_light_spot</object-name>
-	<property>position/altitude-agl-ft</property>
+	<property>position/gear-agl-ft</property>
 	<factor>1.0</factor>
 	<axis>
 	  <x>-1.0</x>

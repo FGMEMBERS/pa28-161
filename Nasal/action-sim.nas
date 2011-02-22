@@ -98,7 +98,7 @@ var update_actions = func {
 #  Simulate landing light ground illumination fall-off with increased agl distance
 ##
     var factor = getprop("sim/model/material/LandingLight/factor");
-    var agl = getprop("position/gear-agl-ft");
+    var agl = getprop("position/altitude-agl-ft");
     var aglFactor = 10000/(agl*agl);
     var factorAGL = factor;
     if (agl > 100) { 

@@ -5,7 +5,7 @@ OBJECT world
 kids 2
 OBJECT poly
 name "landing_light_spot"
-loc 3.08053 -0.016597 -3.00737
+loc 3.08053 -0.0677438 -3.00737
 data 9
 Plane.042
 texture "light.png"
