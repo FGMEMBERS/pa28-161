@@ -18,6 +18,7 @@ var OnGround = nil;
 var fuel_flow = nil;
 var egt = nil;
 var fuel_pump_volume = nil;
+var factorAGL = 0.0;
 
 # set up filters for these actions
 
@@ -33,6 +34,7 @@ var init_actions = func {
     setprop("/accelerations/pilot-g", 1.0);
     setprop("/controls/flight/aileron_in", 0.0);
     setprop("/controls/flight/elevator_in", 0.0);
+    setprop("/sim/model/material/LandingLight/factor", 0.0);  
     setprop("/sim/model/material/LandingLight/factorAGL", 0.0);  
 
     # Make sure that init_actions is called when the sim is reset
@@ -97,12 +99,11 @@ var update_actions = func {
 ##
 #  Simulate landing light ground illumination fall-off with increased agl distance
 ##
-    var factor = getprop("sim/model/material/LandingLight/factor");
+    var factorAGL = getprop("sim/model/material/LandingLight/factor");
     var agl = getprop("position/altitude-agl-ft");
     var aglFactor = 10000/(agl*agl);
-    var factorAGL = factor;
-    if (agl > 100) { 
-       factorAGL = factor*aglFactor;
+   if (agl > 100) { 
+       factorAGL = factorAGL*aglFactor;
     }
 
 ##
@@ -131,7 +132,7 @@ var update_actions = func {
     setprop("/controls/flight/aileron_in", aileron);
     setprop("/controls/flight/elevator_in", elevator);
     setprop("/engines/engine[0]/egt-degf-fix", egt_lowpass.filter(egt));
-    setprop("/sim/model/material/LandingLight/factorAGL", factorAGL);  
+    setprop("/sim/model/material/LandingLight/factorAGL", factorAGL);
     setprop("/engines/engine/fuel-pressure-psi", fuel_pres_lowpass.filter(fuel_pres));
     setprop("/engines/engine/oil-pressure-psi", oil_pres_lowpass.filter(oil_pres));
     setprop("/sim/sound/fuel_pump_volume", fuel_pump_volume);
