@@ -109,7 +109,7 @@
     <!-- <property>/sim/current-view/internal</property> -->
    </condition>
    <volume>
-    <property>/velocities/airspeed-kt</property>
+    <property>/velocities/groundspeed-kt</property>
     <type>log</type>
     <factor>0.25</factor>
    </volume>
