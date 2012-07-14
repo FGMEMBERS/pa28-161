@@ -19,6 +19,7 @@ var fuel_flow = nil;
 var egt = nil;
 var fuel_pump_volume = nil;
 var factorAGL = 0.0;
+var initDone = false;
 
 # set up filters for these actions
 
@@ -36,6 +37,10 @@ var init_actions = func {
     setprop("/controls/flight/elevator_in", 0.0);
     setprop("/sim/model/material/LandingLight/factor", 0.0);  
     setprop("/sim/model/material/LandingLight/factorAGL", 0.0);  
+
+    if (initDone)
+        return;
+    initDone = true;
 
     # Make sure that init_actions is called when the sim is reset
     setlistener("sim/signals/reset", init_actions); 

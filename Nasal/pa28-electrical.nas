@@ -23,6 +23,7 @@ var ammeter_lowpass = aircraft.lowpass.new(0.5);
 ##
 
 init_electrical = func {
+    var first = (battery == nil);
     battery = BatteryClass.new();
     alternator = AlternatorClass.new();
 
@@ -73,6 +74,10 @@ init_electrical = func {
     setprop("surface-positions/flap-pos-norm",0.0);
     setprop("instrumentation/airspeed-indicator/indicated-speed-kt", 0.0);
     setprop("accelerations/pilot-g", 1.0);
+
+    if (!first)
+        return;
+
     print("Nasal Electrical System Initialized");  
 
     # Request that the update fuction be called next frame
