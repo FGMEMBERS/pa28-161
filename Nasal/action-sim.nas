@@ -19,7 +19,7 @@ var fuel_flow = nil;
 var egt = nil;
 var fuel_pump_volume = nil;
 var factorAGL = 0.0;
-var initDone = false;
+var initDone = 0;
 
 # set up filters for these actions
 
@@ -40,7 +40,7 @@ var init_actions = func {
 
     if (initDone)
         return;
-    initDone = true;
+    initDone = 1;
 
     # Make sure that init_actions is called when the sim is reset
     setlistener("sim/signals/reset", init_actions); 
