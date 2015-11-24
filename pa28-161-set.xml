@@ -14,7 +14,7 @@ spinning.
  <sim include="help.xml"> 
  
   <description>Piper Cherokee Warrior II (1979 model)</description>
-  <author>David Megginson</author>
+  <author>David Megginson, Jonathan Redpath (Splash)</author>
 
 
   <!-- Use the YASim physics engine for the flight model -->
@@ -48,6 +48,10 @@ spinning.
      <path></path>
    </electrical>
   </systems>
+  <startup>
+	<splash-texture>Splash/splash1.png</splash-texture>
+	<splash-texture>Splash/splash2.png</splash-texture>
+  </startup>
 
   <!-- For now, use the Cessna 172 sound configuration (same engine) -->
 
