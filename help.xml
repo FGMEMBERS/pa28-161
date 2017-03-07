@@ -39,15 +39,15 @@
     <desc>toggle pitot heat</desc>
    </key>
    <key>
-    <name>(</name>
-    <desc>turn on and/or decrease panel lights</desc>
-   </key>
-   <key>
-    <name>9</name>
+    <name>&gt;</name>
     <desc>increase and/or turn off panel lights</desc>
    </key>
    <key>
-    <name>h</name>
+    <name>&lt;</name>
+    <desc>turn on and/or decrease panel lights</desc>
+   </key>
+   <key>
+    <name>H</name>
     <desc>toggle carburator heat</desc>
    </key>
    <key>

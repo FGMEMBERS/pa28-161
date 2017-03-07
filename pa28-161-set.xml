@@ -305,8 +305,8 @@ spinning.
   </binding>
   </key> 
 
-  <key n="40">
-  <name>(</name>
+  <key n="62">
+  <name>&gt;</name>
   <desc>Increase Panel Lights</desc>
   <repeatable>true</repeatable>
   <binding>
@@ -315,8 +315,8 @@ spinning.
   </binding>
   </key> 
 
-  <key n="57">
-  <name>9</name>
+  <key n="60">
+  <name>&lt;</name>
   <desc>Decrease Panel Lights</desc>
   <repeatable>true</repeatable>
   <binding>
@@ -325,8 +325,8 @@ spinning.
   </binding>
   </key> 
 
-  <key n="104">
-  <name>h</name>
+  <key n="72">
+  <name>H</name>
   <desc>Toggle Carb Heat</desc>
   <binding>
    <command>nasal</command>
