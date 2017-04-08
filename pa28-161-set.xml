@@ -22,6 +22,23 @@ spinning.
   <flight-model archive="y">yasim</flight-model>
   <aero archive="y">pa28-161</aero>
 
+  <tags>
+    <tag>piper</tag>
+    <tag>low-wing</tag>
+    <tag>tricycle</tag>
+    <tag>fixed-gear</tag>
+    <tag>single-engine</tag>
+    <tag>piston</tag>
+    <tag>fixed-pitch</tag>
+    <tag>1960s</tag>
+    <tag>1970s</tag>
+    <tag>1980s</tag>
+    <tag>1990s</tag>
+    <tag>2000s</tag>
+    <tag>2010s</tag>
+    <tag>ifr</tag>
+  </tags>
+
 
   <!-- Use a 3D model with its own 3D cockpit (no 2D panel) -->
 
