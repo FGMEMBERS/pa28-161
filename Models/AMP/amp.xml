@@ -19,7 +19,7 @@
  <animation>
   <type>rotate</type>
   <object-name>AmpNeedle</object-name>
-  <property>/systems/electrical/amps[0]</property>
+  <property>systems/electrical/amps[0]</property>
   <interpolation>
    <entry><ind>  0.0</ind><dep>-38 </dep></entry>     
    <entry><ind>  20</ind><dep>-13</dep></entry>     

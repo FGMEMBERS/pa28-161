@@ -72,7 +72,7 @@
     <repeatable type="bool">true</repeatable>
     <binding>
       <command>property-adjust</command>
-      <property>/controls/flight/elevator-trim</property>
+      <property>controls/flight/elevator-trim</property>
       <step>0.00125</step>
     </binding>
   </action>
@@ -87,7 +87,7 @@
      <repeatable>true</repeatable>
      <binding>
        <command>property-adjust</command>
-       <property>/controls/flight/elevator-trim</property>
+       <property>controls/flight/elevator-trim</property>
        <step>-0.00125</step>
      </binding>
    </action>

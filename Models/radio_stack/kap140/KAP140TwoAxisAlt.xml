@@ -39,7 +39,7 @@ properties' values.
     <object-name>pitch-axis-fail</object-name>
     <name>Pitch Axis Failure</name>
     <condition>
-      <property>/autopilot/KAP140/annunciators/pitchfail</property>
+      <property>autopilot/KAP140/annunciators/pitchfail</property>
       <value type="bool">true</value>
     </condition>
   </animation>
@@ -48,7 +48,7 @@ properties' values.
     <object-name>roll-axis-fail</object-name>
     <name>Roll Axis Failure</name>
     <condition>
-      <property>/autopilot/KAP140/annunciators/rollfail</property>
+      <property>autopilot/KAP140/annunciators/rollfail</property>
       <value type="bool">true</value>
     </condition>
   </animation>
@@ -58,7 +58,7 @@ properties' values.
     <name>AP Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/ap/state</property>
+        <property>autopilot/KAP140/annunciators/ap/state</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -69,7 +69,7 @@ properties' values.
     <name>ROL Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/rol</property>
+        <property>autopilot/KAP140/annunciators/rol</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -80,7 +80,7 @@ properties' values.
     <name>HDG Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/hdg/state</property>
+        <property>autopilot/KAP140/annunciators/hdg/state</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -91,7 +91,7 @@ properties' values.
     <name>NAV Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/nav</property>
+        <property>autopilot/KAP140/annunciators/nav</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -102,7 +102,7 @@ properties' values.
     <name>NAV ARM Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/nav-arm</property>
+        <property>autopilot/KAP140/annunciators/nav-arm</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -113,7 +113,7 @@ properties' values.
     <name>APR Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/apr</property>
+        <property>autopilot/KAP140/annunciators/apr</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -124,7 +124,7 @@ properties' values.
     <name>APR-ARM Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/apr-arm</property>
+        <property>autopilot/KAP140/annunciators/apr-arm</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -135,7 +135,7 @@ properties' values.
     <name>REV Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/rev</property>
+        <property>autopilot/KAP140/annunciators/rev</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -146,7 +146,7 @@ properties' values.
     <name>REV-ARM Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/rev-arm</property>
+        <property>autopilot/KAP140/annunciators/rev-arm</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -157,7 +157,7 @@ properties' values.
     <name>VS Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/vs</property>
+        <property>autopilot/KAP140/annunciators/vs</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -168,7 +168,7 @@ properties' values.
     <name>ALT Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/alt</property>
+        <property>autopilot/KAP140/annunciators/alt</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -179,7 +179,7 @@ properties' values.
     <name>ALT-ARM Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/alt-arm</property>
+        <property>autopilot/KAP140/annunciators/alt-arm</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -190,7 +190,7 @@ properties' values.
     <name>ALERT Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/alt-alert/state</property>
+        <property>autopilot/KAP140/annunciators/alt-alert/state</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -201,7 +201,7 @@ properties' values.
     <name>GS Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/gs</property>
+        <property>autopilot/KAP140/annunciators/gs</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -212,7 +212,7 @@ properties' values.
     <name>GS-ARM Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/gs-arm</property>
+        <property>autopilot/KAP140/annunciators/gs-arm</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -225,13 +225,13 @@ properties' values.
       <or>
         <and>
           <equals>
-            <property>/autopilot/KAP140/annunciators/pt-up</property>
+            <property>autopilot/KAP140/annunciators/pt-up</property>
             <value type="bool">true</value>
           </equals>
         </and>
         <and>
           <equals>
-            <property>/autopilot/KAP140/annunciators/pt-dn</property>
+            <property>autopilot/KAP140/annunciators/pt-dn</property>
             <value type="bool">true</value>
           </equals>
         </and>
@@ -245,7 +245,7 @@ properties' values.
     <condition>
       <and>
         <equals>
-          <property>/autopilot/KAP140/annunciators/pt-up</property>
+          <property>autopilot/KAP140/annunciators/pt-up</property>
           <value type="bool">true</value>
         </equals>
       </and>
@@ -258,7 +258,7 @@ properties' values.
     <condition>
       <and>
         <equals>
-          <property>/autopilot/KAP140/annunciators/pt-dn</property>
+          <property>autopilot/KAP140/annunciators/pt-dn</property>
           <value type="bool">true</value>
         </equals>
       </and>
@@ -271,7 +271,7 @@ properties' values.
     <name>FPM Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/vs-number</property>
+        <property>autopilot/KAP140/annunciators/vs-number</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -288,11 +288,11 @@ properties' values.
     <condition>
       <and>
         <equals>
-          <property>/autopilot/KAP140/annunciators/vs-number</property>
+          <property>autopilot/KAP140/annunciators/vs-number</property>
           <value type="bool">true</value>
         </equals>
         <less-than>
-          <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+          <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
           <value>-1.0</value>
         </less-than>
       </and>
@@ -307,11 +307,11 @@ properties' values.
     <condition>
       <and>
         <equals>
-          <property>/autopilot/KAP140/annunciators/vs-number</property>
+          <property>autopilot/KAP140/annunciators/vs-number</property>
           <value type="bool">true</value>
         </equals>
         <greater-than-equals>
-          <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+          <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
           <value>-1.0</value>
         </greater-than-equals>
       </and>
@@ -320,7 +320,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit5</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>0.1</factor>
     <step>1</step>
     <bias>0.5</bias>
@@ -333,7 +333,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit4</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>0.01</factor>
     <step>10</step>
     <bias>0.5</bias>
@@ -346,7 +346,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit3</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>0.001</factor>
     <step>100</step>
     <bias>0.5</bias>
@@ -359,7 +359,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit2</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>0.0001</factor>
     <step>1000</step>
     <bias>0.5</bias>
@@ -372,7 +372,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit5-minus</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>-0.1</factor>
     <step>1</step>
     <bias>0.5</bias>    
@@ -385,7 +385,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit4-minus</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>-0.01</factor>
     <step>10</step>
     <bias>9.5</bias>    
@@ -398,7 +398,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit3-minus</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>-0.001</factor>
     <step>100</step>
     <bias>99.5</bias>
@@ -411,7 +411,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>vs-digit2-minus</object-name>
-    <property>/autopilot/KAP140/settings/target-pressure-rate-fpm</property>
+    <property>autopilot/KAP140/settings/target-pressure-rate-fpm</property>
     <factor>-0.0001</factor>
     <step>1000</step>
     <bias>999.5</bias>
@@ -429,7 +429,7 @@ properties' values.
     <name>FT Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/alt-number</property>
+        <property>autopilot/KAP140/annunciators/alt-number</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -437,7 +437,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>alt-digit1</object-name>
-    <property>/autopilot/KAP140/settings/target-alt-ft</property>
+    <property>autopilot/KAP140/settings/target-alt-ft</property>
     <factor>0.00001</factor>
     <step>10000</step>
     <axis>
@@ -449,7 +449,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>alt-digit2</object-name>
-    <property>/autopilot/KAP140/settings/target-alt-ft</property>
+    <property>autopilot/KAP140/settings/target-alt-ft</property>
     <factor>0.0001</factor>
     <step>1000</step>
     <axis>
@@ -461,7 +461,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>alt-digit3</object-name>
-    <property>/autopilot/KAP140/settings/target-alt-ft</property>
+    <property>autopilot/KAP140/settings/target-alt-ft</property>
     <factor>0.001</factor>
     <step>100</step>
     <axis>
@@ -473,7 +473,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>alt-digit4</object-name>
-    <property>/autopilot/KAP140/settings/target-alt-ft</property>
+    <property>autopilot/KAP140/settings/target-alt-ft</property>
     <factor>0.01</factor>
     <step>10</step>
     <axis>
@@ -485,7 +485,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>alt-digit5</object-name>
-    <property>/autopilot/KAP140/settings/target-alt-ft</property>
+    <property>autopilot/KAP140/settings/target-alt-ft</property>
     <factor>0.1</factor>
     <step>1</step>
     <axis>
@@ -502,7 +502,7 @@ properties' values.
     <name>hPa Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/bs-hpa-number</property>
+        <property>autopilot/KAP140/annunciators/bs-hpa-number</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -510,7 +510,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>hpa-digit2</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
+    <property>autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>0.1</factor>
     <step>1</step>
     <bias>0.0005</bias>
@@ -523,7 +523,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>hpa-digit3</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
+    <property>autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>1</factor>
     <step>0.1</step>
     <bias>0.0005</bias>
@@ -536,7 +536,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>hpa-digit3</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
+    <property>autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>10</factor>
     <step>0.01</step>
     <bias>0.0005</bias>
@@ -549,7 +549,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>hpa-digit4</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
+    <property>autopilot/KAP140/settings/baro-setting-hpa</property>
     <factor>100</factor>
     <step>0.001</step>
     <bias>0.0005</bias>
@@ -563,13 +563,13 @@ properties' values.
     <name>Baro Setting hPa number</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/bs-hpa-number</property>
+        <property>autopilot/KAP140/annunciators/bs-hpa-number</property>
         <value type="bool">true</value>
       </equals>
     </condition>
     <chunk>
       <type>number-value</type>
-      <property>/autopilot/KAP140/settings/baro-setting-hpa</property>
+      <property>autopilot/KAP140/settings/baro-setting-hpa</property>
       <scale>1</scale>
       <format>%01.3f</format>
     </chunk>
@@ -583,7 +583,7 @@ properties' values.
     <name>IN HG Anunciator</name>
     <condition>
       <equals>
-        <property>/autopilot/KAP140/annunciators/bs-inhg-number</property>
+        <property>autopilot/KAP140/annunciators/bs-inhg-number</property>
         <value type="bool">true</value>
       </equals>
     </condition>
@@ -591,7 +591,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>inhg-digit2</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
+    <property>autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>0.01</factor>
     <step>10</step>
     <bias>0.005</bias>
@@ -604,7 +604,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>inhg-digit3</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
+    <property>autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>0.1</factor>
     <step>1</step>
     <bias>0.005</bias>
@@ -617,7 +617,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>inhg-digit4</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
+    <property>autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>1</factor>
     <step>0.1</step>
     <bias>0.005</bias>
@@ -630,7 +630,7 @@ properties' values.
   <animation>
     <type>textranslate</type>
     <object-name>inhg-digit5</object-name>
-    <property>/autopilot/KAP140/settings/baro-setting-inhg</property>
+    <property>autopilot/KAP140/settings/baro-setting-inhg</property>
     <factor>10</factor>
     <step>0.01</step>
     <bias>0.005</bias>
