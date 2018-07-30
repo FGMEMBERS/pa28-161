@@ -44,10 +44,8 @@ spinning.
 
   <model>
    <path archive="y">Aircraft/pa28-161/Models/pa28-161.xml</path>
-  </model>
-  <multiplay>
     <fallback-model-index type="int">11</fallback-model-index>
-  </multiplay>
+  </model>
   <panel>
    <visibility archive="y">false</visibility>
   </panel>
