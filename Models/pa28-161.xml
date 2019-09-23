@@ -724,7 +724,7 @@
  <animation>
    <type>rotate</type>
    <object-name>DoorLatch</object-name>
-   <property>/sim/model/door-positions/rightDoor/position-norm</property>
+   <property>sim/model/door-positions/rightDoor/position-norm</property>
    <interpolation>
      <entry>
        <ind>0.0</ind>

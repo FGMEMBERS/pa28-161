@@ -44,6 +44,7 @@ spinning.
 
   <model>
    <path archive="y">Aircraft/pa28-161/Models/pa28-161.xml</path>
+    <fallback-model-index type="int">11</fallback-model-index>
   </model>
   <panel>
    <visibility archive="y">false</visibility>
@@ -369,13 +370,13 @@ spinning.
   <desc>Toggle Starter Switch</desc>
    <binding>
      <command>property-assign</command>
-     <property>/controls/switches/starter</property>
+     <property>controls/switches/starter</property>
      <value >1</value>
    </binding>
    <mod-up>
      <binding>
        <command>property-assign</command>
-       <property>/controls/switches/starter</property>
+       <property>controls/switches/starter</property>
        <value>0</value>
      </binding>
    </mod-up>

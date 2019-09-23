@@ -31,7 +31,7 @@
      <h>25</h>
      <binding>
       <command>property-adjust</command>
-      <property>/controls/flight/rudder-trim</property>
+      <property>controls/flight/rudder-trim</property>
       <step>-0.001</step>
      </binding>
    </action>   
@@ -45,7 +45,7 @@
      <h>25</h>
      <binding>
       <command>property-adjust</command>
-      <property>/controls/flight/rudder-trim</property>
+      <property>controls/flight/rudder-trim</property>
       <step>0.001</step>
      </binding>
    </action>   
@@ -61,7 +61,7 @@
      <h>12.5</h>
       <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <property>instrumentation/heading-indicator/offset-deg</property>
        <step>-1</step>
        <min>0</min>
        <max>360</max>
@@ -78,7 +78,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <property>instrumentation/heading-indicator/offset-deg</property>
        <step>-5</step>
        <min>0</min>
        <max>360</max>
@@ -95,7 +95,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <property>instrumentation/heading-indicator/offset-deg</property>
        <step>1</step>
        <min>0</min>
        <max>360</max>
@@ -112,7 +112,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/heading-indicator/offset-deg</property>
+       <property>instrumentation/heading-indicator/offset-deg</property>
        <step>5</step>
        <min>0</min>
        <max>360</max>
@@ -131,7 +131,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/autopilot/settings/heading-bug-deg</property>
+       <property>autopilot/settings/heading-bug-deg</property>
        <step>-1</step>
        <min>0</min>
        <max>360</max>
@@ -148,7 +148,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/autopilot/settings/heading-bug-deg</property>
+       <property>autopilot/settings/heading-bug-deg</property>
        <step>-5</step>
        <min>0</min>
        <max>360</max>
@@ -165,7 +165,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/autopilot/settings/heading-bug-deg</property>
+       <property>autopilot/settings/heading-bug-deg</property>
        <step>1</step>
        <min>0</min>
        <max>360</max>
@@ -182,7 +182,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/autopilot/settings/heading-bug-deg</property>
+       <property>autopilot/settings/heading-bug-deg</property>
        <step>5</step>
        <min>0</min>
        <max>360</max>
@@ -200,7 +200,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav/radials/selected-deg</property>
+       <property>instrumentation/nav/radials/selected-deg</property>
        <step>-1</step>
        <min>0</min>
        <max>360</max>
@@ -217,7 +217,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav/radials/selected-deg</property>
+       <property>instrumentation/nav/radials/selected-deg</property>
        <step>-5</step>
        <min>0</min>
        <max>360</max>
@@ -234,7 +234,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav/radials/selected-deg</property>
+       <property>instrumentation/nav/radials/selected-deg</property>
        <step>1</step>
        <min>0</min>
        <max>360</max>
@@ -251,7 +251,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav/radials/selected-deg</property>
+       <property>instrumentation/nav/radials/selected-deg</property>
        <step>5</step>
        <min>0</min>
        <max>360</max>
@@ -269,7 +269,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <property>instrumentation/nav[1]/radials/selected-deg</property>
        <step>-1</step>
        <min>0</min>
        <max>360</max>
@@ -286,7 +286,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <property>instrumentation/nav[1]/radials/selected-deg</property>
        <step>-5</step>
        <min>0</min>
        <max>360</max>
@@ -303,7 +303,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <property>instrumentation/nav[1]/radials/selected-deg</property>
        <step>1</step>
        <min>0</min>
        <max>360</max>
@@ -320,7 +320,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/nav[1]/radials/selected-deg</property>
+       <property>instrumentation/nav[1]/radials/selected-deg</property>
        <step>5</step>
        <min>0</min>
        <max>360</max>
@@ -340,7 +340,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/altimeter/setting-inhg</property>
+       <property>instrumentation/altimeter/setting-inhg</property>
        <step>-0.01</step>
        <min>26.0</min>
        <max>33.0</max>
@@ -357,7 +357,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/altimeter/setting-inhg</property>
+       <property>instrumentation/altimeter/setting-inhg</property>
        <step>-0.1</step>
       <min>26.0</min>
        <max>33.0</max>
@@ -374,7 +374,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/altimeter/setting-inhg</property>
+       <property>instrumentation/altimeter/setting-inhg</property>
        <step>0.01</step>
        <min>26.0</min>
        <max>33.0</max>
@@ -391,7 +391,7 @@
      <h>12.5</h>
      <binding>
        <command>property-adjust</command>
-       <property>/instrumentation/altimeter/setting-inhg</property>
+       <property>instrumentation/altimeter/setting-inhg</property>
        <step>0.1</step>
        <min>26.0</min>
       <max>33.0</max>
@@ -410,7 +410,7 @@
      <h>31</h>
      <binding>
        <command>property-adjust</command>
-       <property>/controls/engines/engine/magnetos</property>
+       <property>controls/engines/engine/magnetos</property>
        <step>-1</step>
        <min>0</min>
        <max>3</max>
@@ -426,7 +426,7 @@
      <h>31</h>
      <binding>
        <command>property-adjust</command>
-       <property>/controls/engines/engine/magnetos</property>
+       <property>controls/engines/engine/magnetos</property>
        <step>1</step>
        <min>0</min>
        <max>3</max>
@@ -443,13 +443,13 @@
      <h>31</h>
    <binding>
      <command>property-assign</command>
-     <property>/controls/switches/starter</property>
+     <property>controls/switches/starter</property>
      <value >1</value>
    </binding>
    <mod-up>
      <binding>
        <command>property-assign</command>
-       <property>/controls/switches/starter</property>
+       <property>controls/switches/starter</property>
        <value>0</value>
      </binding>
    </mod-up>
